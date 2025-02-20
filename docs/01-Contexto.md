@@ -9,10 +9,6 @@ Descreva também o contexto em que essa aplicação será usada, se  houver: emp
 
 O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
 
-> **Links úteis**:
-> - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz certezas, suposições e dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
