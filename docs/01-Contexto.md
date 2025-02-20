@@ -5,10 +5,6 @@ O cenário moderno de busca por soluções de mobilidade sustentável e otimiza�
 ## Problema
 A adesão a um aplicativo de caronas compartilhadas dentro da universidade da PUC pode ser afetada por diversos desafios. A falta de um sistema de caronas personalizado, adaptado às necessidades e horários dos alunos, muitas vezes dificulta a utilização do serviço. Além disso, a insegurança em relação à confiabilidade dos motoristas e passageiros, somada à dificuldade de integração com outras opções de transporte, pode gerar resistência. A abundância de aplicativos de transporte disponíveis no mercado também pode criar confusão e dificultar a escolha da melhor alternativa.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
-
 
 ## Objetivos
 
