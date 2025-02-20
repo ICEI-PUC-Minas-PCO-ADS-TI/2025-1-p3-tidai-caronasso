@@ -1,9 +1,9 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O cenário moderno de busca por soluções de mobilidade sustentável e otimização de tempo está cada vez mais interligado com o uso de tecnologias inovadoras. Nesse contexto, o projeto interdisciplinar visa abordar as necessidades e desafios enfrentados pelos estudantes e funcionários no âmbito das caronas universitárias. O objetivo do projeto é desenvolver um sistema integrado que ofereça suporte personalizado para indivíduos que desejam otimizar seus deslocamentos, ao mesmo tempo em que considera aspectos cruciais como disponibilidade de horários e objetivos individuais de transporte.
 
 ## Problema
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
+A adesão a um aplicativo de caronas compartilhadas dentro da universidade da PUC pode ser afetada por diversos desafios. A falta de um sistema de caronas personalizado, adaptado às necessidades e horários dos alunos, muitas vezes dificulta a utilização do serviço. Além disso, a insegurança em relação à confiabilidade dos motoristas e passageiros, somada à dificuldade de integração com outras opções de transporte, pode gerar resistência. A abundância de aplicativos de transporte disponíveis no mercado também pode criar confusão e dificultar a escolha da melhor alternativa.
 
 Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
 
