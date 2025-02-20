@@ -17,22 +17,9 @@ Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O desenvolvimento do sistema de caronas universitárias integradas está baseada na crescente necessidade de soluções de mobilidade sustentável e otimização do tempo para a comunidade universitária da PUC. A falta de um sistema personalizado e adaptado aos horários e trajetos dos alunos, funcionários e professores dificulta a adesão a serviços de carona compartilhada. O projeto visa oferecer uma plataforma que integre diferentes opções de transporte, garantindo flexibilidade, segurança e confiança, ao mesmo tempo em que reduz custos e impacto ambiental.
 
 ## Público-alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo desta aplicação são os estudantes, colaboradores e professores da PUC que utilizam ou têm interesse em utilizar caronas compartilhadas para seus deslocamentos dentro ou fora do campus. Esses usuários possuem diferentes perfis e necessidades, o que exige um sistema personalizável e flexível.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público-alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
