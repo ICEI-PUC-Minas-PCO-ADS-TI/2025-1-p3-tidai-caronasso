@@ -16,9 +16,20 @@ O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permit
 
 ## Objetivos
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+Objetivos Esperados:
 
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
+1.	Mobilidade Sustentável:
+Ao incentivar o compartilhamento de caronas, o projeto contribuirá para a redução do número de veículos nas ruas, diminuindo significativamente a emissão de gases poluentes. Isso resultará em uma melhoria da qualidade do ar e um impacto positivo no meio ambiente, alinhando a universidade com práticas sustentáveis e responsáveis.
+
+3.	Economia para os Usuários:
+O sistema proporcionará uma economia significativa para os membros da comunidade universitária, reduzindo os custos com transporte diário. Ao compartilhar viagens com colegas, seja como motorista ou passageiro, tornando o deslocamento mais acessível e mais rápidos.
+4.	Fortalecimento da Comunidade Universitária:
+O sistema de carona promoverá um ambiente de maior interação entre alunos, professores e colaboradores, aproximando as pessoas e incentivando a colaboração e a troca de experiências. Essa conexão fortalecerá o senso de pertencimento à comunidade acadêmica, estimulando o networking e o apoio mútuo, tanto dentro quanto fora do ambiente universitário.
+
+6.	Segurança e Confiabilidade:
+O uso de credenciais institucionais, como o e-mail @sga.pucminas.br, garantirá que somente membros autenticados da universidade possam acessar a plataforma, proporcionando um nível adicional de segurança e confiança. Além disso, o sistema de avaliações contínuas permitirá que motoristas e passageiros compartilhem feedback sobre suas experiências, criando um ambiente de transparência e responsabilização, e promovendo relações seguras e confiáveis dentro da comunidade universitária.
+
+
  
 > **Links úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
