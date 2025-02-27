@@ -24,8 +24,6 @@ O sistema de carona promoverá um ambiente de maior interação entre alunos, pr
 6.	Segurança e Confiabilidade:
 O uso de credenciais institucionais, como o e-mail @sga.pucminas.br, garantirá que somente membros autenticados da universidade possam acessar a plataforma, proporcionando um nível adicional de segurança e confiança. Além disso, o sistema de avaliações contínuas permitirá que motoristas e passageiros compartilhem feedback sobre suas experiências, criando um ambiente de transparência e responsabilização, e promovendo relações seguras e confiáveis dentro da comunidade universitária.
 
-
-
 ## Justificativa
 
 O desenvolvimento do sistema de caronas universitárias integradas está baseada na crescente necessidade de soluções de mobilidade sustentável e otimização do tempo para a comunidade universitária da PUC. A falta de um sistema personalizado e adaptado aos horários e trajetos dos alunos, funcionários e professores dificulta a adesão a serviços de carona compartilhada. O projeto visa oferecer uma plataforma que integre diferentes opções de transporte, garantindo flexibilidade, segurança e confiança, ao mesmo tempo em que reduz custos e impacto ambiental.
