@@ -83,7 +83,7 @@ Lembre-se de que cada requisito deve corresponder a uma e somente uma caracterí
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre |
+|001| O projeto deverá ser entregue até o final do semestre. |
 |002| O usuário só poderá ter acesso ao sistema se estiver cadastrado com um e-mail institucional (@sga.pucminas.br).  |
 |003| O sistema deve garantir que apenas membros autenticados da universidade possam acessar a plataforma. |
 |004| O sistema não poderá cobrar taxas adicionais dos usuários, pois o serviço deve ser sem fins lucrativos.  |
