@@ -86,12 +86,9 @@ Lembre-se de que cada requisito deve corresponder a uma e somente uma caracterí
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |001| O projeto deverá ser entregue até o final do semestre. |
-|002| O usuário só poderá ter acesso ao sistema se estiver cadastrado com um e-mail institucional (@sga.pucminas.br).  |
-|003| O sistema deve garantir que apenas membros autenticados da universidade possam acessar a plataforma. |
-|004| O sistema não poderá cobrar taxas adicionais dos usuários, pois o serviço deve ser sem fins lucrativos.  |
-|005| O sistema deve incluir um mecanismo de avaliação contínua para motoristas e passageiros.  |
-|006| Toda a documentação do projeto deve ser entregue completa e atualizada.  |
-|007| Não pode faltar nenhum requisito funcional previamente declarado.  |
+|002| A equipe não pode subcontratar o desenvolvimento do trabalho. |
+|003| Toda a documentação do projeto deve ser entregue completa e atualizada.  |
+|004| Não pode faltar nenhum requisito funcional previamente declarado.  |
 
 
 
