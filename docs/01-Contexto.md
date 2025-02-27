@@ -25,9 +25,6 @@ O sistema de carona promoverá um ambiente de maior interação entre alunos, pr
 O uso de credenciais institucionais, como o e-mail @sga.pucminas.br, garantirá que somente membros autenticados da universidade possam acessar a plataforma, proporcionando um nível adicional de segurança e confiança. Além disso, o sistema de avaliações contínuas permitirá que motoristas e passageiros compartilhem feedback sobre suas experiências, criando um ambiente de transparência e responsabilização, e promovendo relações seguras e confiáveis dentro da comunidade universitária.
 
 
- 
-> **Links úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
