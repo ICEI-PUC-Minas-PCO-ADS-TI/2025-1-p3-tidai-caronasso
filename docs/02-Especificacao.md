@@ -87,7 +87,7 @@ O projeto está restrito aos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |001| O projeto deverá ser entregue até o final do semestre |
-|002| O custo total do projeto não deve exceder o orçamento definido       |
+|002| O usuário só poderá ter acesso se estiver cadastrado  |
 
 ## Diagrama de casos de uso
 
