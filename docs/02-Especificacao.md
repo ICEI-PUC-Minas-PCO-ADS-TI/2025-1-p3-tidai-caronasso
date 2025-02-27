@@ -70,8 +70,12 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
-|RNF-002| Deve processar as requisições do usuário em no máximo 3 segundos |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo, funcionando adequadamente em dispositivos móveis | ALTA | 
+|RNF-002| O sistema deve processar as requisições de busca de viagens em até 2 segundos |  BAIXA |
+|RNF-003| OO aplicativo deve ser compatível com as versões mais recentes do Android e iOS | ALTA | 
+|RNF-004| O aplicativo deve ser capaz de suportar até 100 usuários simultâneos |  BAIXA | 
+|RNF-005| O sistema deve ter alta disponibilidade, com tempo de inatividade inferior a 1% | MÉDIA | 
+  
 
 Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
