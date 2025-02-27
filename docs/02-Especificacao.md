@@ -14,6 +14,8 @@ Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos 
 
 João é um estudante universitário de 19 anos atualmente cursando Análise e Desenvolvimento de Sistemas. João gosta de jogar LoL e atualmente trabalha na área da logística, mas está procurando um estágio. Objetivos: Conseguir voltar da faculdade para casa com mais facilidade. Necessidades: Um sistema que permita que ele encontre pessoas da sua faculdade que ofereçam caronas. 
 
+Maria é uma professora de 32 anos. Maria é extrovertida e gosta muito de conversar, além disso ela não gosta de ficar sozinha. Objetivos: Achar uma companhia para quando estiver voltando de carro da faculdade. Necessidades: Um sistema que a auxilie em achar pessoas que precisam de carona.
+
 > **Links úteis**:
 > - [Rock content](https://rockcontent.com/blog/personas/)
 > - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
