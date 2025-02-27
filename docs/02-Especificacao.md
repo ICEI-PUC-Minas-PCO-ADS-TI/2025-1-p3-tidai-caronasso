@@ -52,8 +52,19 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário se cadastre utilizando o e-mail da instituição | ALTA | 
+|RF-002| Permitir que o usuário cadastre um ponto de referência para facilitar a localização de embarque   | ALTA |
+|RF-003| Permitir que o motorista cadastre um ponto de referência para facilitar o encontro com o passageiro | ALTA | 
+|RF-004| Permitir que o passageiro cancele a carona antes do início da viagem   | ALTA |
+|RF-005| Permitir que o passageiro confirme a reserva da carona antes do início da viagem | ALTA | 
+|RF-006| Permitir que o usuário cadastre uma viagem com informações de origem e destino  | ALTA |
+|RF-007| Permitir que o usuário pesquise viagens disponíveis com base em origem ou destino	 | ALTA | 
+|RF-008| Permitir que o usuário envie mensagens para o motorista ou passageiro sobre a viagem   | ALTA |
+|RF-009| Permitir que o usuário se cadastre e crie um perfil com informações pessoais, como nome, telefone e foto  | ALTA |
+|RF-010| Permitir que o motorista defina o número de assentos disponíveis para a viagem | MÉDIA | 
+|RF-011| Exibir a avaliação do motorista e do passageiro com base em avaliações anteriores   | ALTA |
+
+
 
 ### Requisitos não funcionais
 
