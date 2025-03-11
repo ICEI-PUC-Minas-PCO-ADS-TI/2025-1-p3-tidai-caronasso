@@ -54,18 +54,16 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
 |--------------------|------------------------------------|----------------------------------------|
-|Administrador do    |Monitorar a atividade das caronas   | Não esquecer de fazê-las               |
-|Sistema             |em tempo real e Alterar permissões  | Permitir que possam administrar contas |
+|Administrador do Sistema|Monitorar a atividade das caronas em tempo real e alterar permissões|Permitir administrar contas, garantindo a segurança e organização dos dados.|
 
 |EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
 |--------------------|------------------------------------|----------------------------------------|
-|Motorista           | Oferecer caronas e receber         | Não esquecer de fazê-las               |
-|                    | avaliações                         | Permitir que possam administrar contas |
+|Motorista           |Oferecer caronas e receber avaliações|Melhorar a minha experiência como motorista e garantir que minhas viagens sejam mais eficientes.|
+
 
 |EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
 |--------------------|------------------------------------|----------------------------------------|
-|Estudante/          | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Funcionário         | Alterar permissões                 | Permitir que possam administrar contas |
+|Estudante/Funcionário|Encontrar caronas disponíveis de forma rápida e fácil|Economizar com transporte e reduzir o tempo de deslocamento entre a universidade e minha casa.|
 
 ## Requisitos
 
