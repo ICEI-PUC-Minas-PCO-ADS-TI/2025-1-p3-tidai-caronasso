@@ -12,9 +12,31 @@ Exemplo: _Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pens
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-Paulo é um estudante universitário de 19 anos atualmente cursando Análise e Desenvolvimento de Sistemas. Paulo gosta de jogar LoL e atualmente trabalha na área da logística, mas está procurando um estágio. Objetivos: Conseguir voltar da faculdade para casa com mais facilidade. Necessidades: Um sistema que permita que ele encontre pessoas da sua faculdade que ofereçam caronas.  
+Paulo é um estudante universitário de 19 anos atualmente cursando Análise e Desenvolvimento de Sistemas. 
+- Paulo gosta de jogar LoL e atualmente trabalha na área da logística, mas está procurando um estágio.
+- Objetivos: Conseguir voltar da faculdade para casa com mais facilidade.
+- Necessidades: Ter uma opção segura e confiável para se deslocar para casa, além de economizar o tempo que ficaria no ponto de ônibus.
 
-Maria é uma professora de 32 anos. Maria é extrovertida e gosta muito de conversar, além disso ela não gosta de ficar sozinha. Objetivos: Achar uma companhia para quando estiver voltando de carro da faculdade. Necessidades: Um sistema que a auxilie em achar pessoas que precisam de carona.
+Maria é uma professora de 32 anos. 
+- Maria é extrovertida e gosta muito de conversar, além disso ela não gosta de ficar sozinha.
+- Objetivos: Achar uma companhia para quando estiver voltando de carro da faculdade.
+- Necessidades: Um sistema que a auxilie em achar pessoas que precisam de carona.
+
+Victor é um aluno de 27 anos, cursando Sistemas de Informação na PUC. 
+- Victor gosta de sair para baladas e viver novas experiências, além disso Victor recentemente comprou um carro.
+- Objetivos: Oferecer caronas para outros alunos, professores ou colaboradores da PUC ajudando a reduzir os custos com combustível e criando uma rede de apoio entre os colegas.
+- Necessidades: Encontrar passageiros com trajetos semelhantes que compartilhem os custos da viagem de maneira justa.
+
+Fernanda é uma colaboradora de 35 anos, do administrativo da PUC Minas.
+- Fernanda tem a agenda apertada devido a vida profissional e pessoal, ela gosta de conhecer pessoas.
+- Objetivos: Conseguir uma carona para voltar para casa após o trabalho na PUC de forma eficiente e econômica.
+- Necessidades: Otimizar seu tempo e reduzir os custos diários com transporte.
+
+Larissa Silva é uma aluna de 19 anos que cursa Psicologia na PUC.
+- Larissa é solitária e gosta de interagir com outras pessoas, além disso ela é organizada mas tem horários de aula irregulares
+- Objetivos: Conseguir uma carona para voltar para casa de forma mais rápida e que seja compatível com seu horário de aula irregular.
+- Necessidades: Um sistema que permita escolher entre caronas que respeitem sua rotina e horários de aula.
+
 
 > **Links úteis**:
 > - [Rock content](https://rockcontent.com/blog/personas/)
