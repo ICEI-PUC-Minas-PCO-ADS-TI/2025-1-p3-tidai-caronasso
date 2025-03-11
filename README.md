@@ -17,7 +17,7 @@ O objetivo consiste em fornecer uma aplicação com foco na oferta e procura de 
 * Gabriel Henrique Duarte Ferraz
 * João Pedro dos Santos Martins
 * Phillipi Garcia da Silveira
-* Victor Bryan Ferreira Lopez
+* Victor Bryan Ferreira Lopes
 
 
 
