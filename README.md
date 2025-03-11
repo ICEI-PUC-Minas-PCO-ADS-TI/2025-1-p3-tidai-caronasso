@@ -12,12 +12,14 @@ O objetivo consiste em fornecer uma aplicação com foco na oferta e procura de 
 
 ## Integrantes
 
-* João Pedro dos Santos Martins
 * Christian Sena Gomes
-* Gabriel Henrique Duarte Ferraz
-* Victor Bryan Ferreira Lopez
-* Phillipi Garcia da Silveira
 * Diego Romero Ribeiro Chaves
+* Gabriel Henrique Duarte Ferraz
+* João Pedro dos Santos Martins
+* Phillipi Garcia da Silveira
+* Victor Bryan Ferreira Lopez
+
+
 
 ## Professor
 
