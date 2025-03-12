@@ -54,16 +54,43 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
 |--------------------|------------------------------------|----------------------------------------|
-|Administrador do Sistema|Monitorar a atividade das caronas em tempo real e alterar permissões|Permitir administrar contas, garantindo a segurança e organização dos dados.|
+|Estudante/Colaborador que precisa de transporte|Pesquisar motoristas disponíveis com trajetos compatíveis|Encontrar uma carona conveniente e economizar no deslocamento|
 
 |EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
 |--------------------|------------------------------------|----------------------------------------|
-|Motorista           |Oferecer caronas e receber avaliações|Melhorar a minha experiência como motorista e garantir que minhas viagens sejam mais eficientes.|
-
+|Estudante/colaborador que tem carro|Oferecer caronas para outros alunos/colaboradores|Dividir os custos do combustível e contribuir com a mobilidade sustentável|
 
 |EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
 |--------------------|------------------------------------|----------------------------------------|
-|Estudante/Funcionário|Encontrar caronas disponíveis de forma rápida e fácil|Economizar com transporte e reduzir o tempo de deslocamento entre a universidade e minha casa.|
+|Estudante/Colaborador|Agendar uma carona com antecedência|Planejar melhor meu deslocamento e evitar imprevistos|
+
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
+|--------------------|------------------------------------|----------------------------------------|
+|Passageiro| Avaliar os motoristas e as caronas que participei|Ajudar a manter um ambiente seguro e confiável na plataforma|
+
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
+|--------------------|------------------------------------|----------------------------------------|
+|Usuário da plataforma|Acessar um histórico das minhas caronas passadas|Visualizar com quem já viajei e manter contato com motoristas confiáveis|
+
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
+|--------------------|------------------------------------|----------------------------------------|
+|Estudante/Colaborador da PUC|Me cadastrar e fazer login utilizando meu e-mail institucional|Quero me cadastrar e fazer login utilizando meu e-mail institucional|
+
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
+|--------------------|------------------------------------|----------------------------------------|
+|Passageiro|Receber notificações sobre o status da minha carona (confirmação, cancelamento, lembretes)|Estar sempre informado sobre mudanças no meu trajeto|
+
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
+|--------------------|------------------------------------|----------------------------------------|
+|Motorista|Definir preferências, como horário, número de passageiros e regras da viagem|Garantir que a carona ocorra de forma confortável e organizada|
+
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
+|--------------------|------------------------------------|----------------------------------------|
+|Motorista|Que os passageiros confirmem sua presença antes da carona|Evitar desistências de última hora e melhor planejar a viagem|
+
+|EU COMO...          | QUERO/PRECISO ...                  |PARA ...                                |
+|--------------------|------------------------------------|----------------------------------------|
+|Usuário da plataforma|Poder conversar com motoristas e passageiros antes da viagem|Combinar detalhes e esclarecer dúvidas sobre o trajeto|
 
 ## Requisitos
 
