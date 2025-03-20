@@ -41,10 +41,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 > Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
 
 #### Sprint 1
-- _Scrum master_: AlunaX
-- Protótipos: AlunoY
-- Testes: AlunoK
-- Documentação: AlunaZ
+- Documentação: Todos os alunos
 
 #### Sprint 2
 - _Scrum master_: AlunaY
@@ -62,9 +59,9 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Gabriel Henrique        | Histórias de usuário| 19/03/2024     | 12/03/2024 | ✔️    | 10/03/2024      |
-| Gabriek Henrique        | Slides    | 11/03/2024     | 12/03/2024 | ✔️    |     12/03/2024               |
-| Gabriel Henrique        | Introdução  | 12/02/2024     | 12/03/2005 | ✔️     |      12/02/2024            |
+| Gabriel Henrique        | Histórias de usuário| 19/02/2025     | 12/03/2025 | ✔️    | 10/03/2025      |
+| Gabriel Henrique        | Slides    | 11/03/2025     | 12/03/2025| ✔️    |     12/03/2025               |
+| Gabriel Henrique        | Introdução  | 12/02/2025     | 12/03/2025 | ✔️     |      12/02/2025            |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
 #### Sprint 2
@@ -110,7 +107,7 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
+| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p3-tidai-caronasso.git                           |
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de interface                | Figma                              | http://....                            |
 | Gerenciamento do projeto            | GitHub Projects                    | http://....                            |
