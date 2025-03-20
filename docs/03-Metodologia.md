@@ -72,6 +72,9 @@ Atualizado em: 21/04/2024
 | Victor Bryan    | Justificativa  | 19/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
 | Victor Bryan    | Histórias de usuário  | 19/02/2025     | 12/03/2025 | ✔️     |      10/03/2025            |
 | Victor Bryan    | Público Alvo  | 25/02/2025     | 12/03/2025 | ✔️     |      28/02/2025            |
+| Diego Chaves    | Requisitos | 25/02/2025     | 12/03/2025 | ✔️     |      28/02/2025          |
+| Diego Chaves    | Objetivos  | 25/02/2025     | 12/03/2025 | ✔️     |      28/02/2025          |
+| Diego Chaves    | Caso de Uso  | 19/03/2025     | 12/03/2025 | ✔️     |      28/02/2025          |
 
 #### Sprint 2
 
