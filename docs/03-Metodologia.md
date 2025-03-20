@@ -61,8 +61,10 @@ Atualizado em: 21/04/2024
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Gabriel Henrique        | Histórias de usuário| 19/02/2025     | 12/03/2025 | ✔️    | 10/03/2025      |
 | Gabriel Henrique        | Slides    | 11/03/2025     | 12/03/2025| ✔️    |     12/03/2025               |
-| Gabriel Henrique        | Introdução  | 12/02/2025     | 12/03/2025 | ✔️     |      12/02/2025            |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Gabriel Henrique        | Introdução  | 12/02/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
+| João Pedro        | contexto| 19/02/2025     | 12/03/2025 | ✔️    | 12/03/2025      |
+| João Pedro        | Requisitos    | 11/03/2025     | 12/03/2025| ✔️    |     26/02/2025               |
+| João Pedro        | Slide  | 11/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
 
 #### Sprint 2
 
