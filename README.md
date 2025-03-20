@@ -1,25 +1,29 @@
-# Nome do projeto
+# Caronasso
 
 `CURSO: Análise e Desenvolvimento de Sistemas`
 
 `DISCIPLINA: Trabalho Interdisciplinar Desenvolvimento de Aplicação Interativa`
 
-`Xº semestre/ANO`
+`3º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O objetivo consiste em fornecer uma aplicação com foco na oferta e procura de caronas, com foco em caronas recorrentes. A intenção é criar um "marketplace" que permita a comunicação entre o passageiro e o motorista, permitindo um acordo mútuo entre os usuários para que seja marcadas "corridas" em torno da faculdade.
+
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Christian Sena Gomes
+* Diego Romero Ribeiro Chaves
+* Gabriel Henrique Duarte Ferraz
+* João Pedro dos Santos Martins
+* Phillipi Garcia da Silveira
+* Victor Bryan Ferreira Lopes
+
+
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Kleber Jacques Ferreira de Souza
 
 ## Instruções de utilização
 

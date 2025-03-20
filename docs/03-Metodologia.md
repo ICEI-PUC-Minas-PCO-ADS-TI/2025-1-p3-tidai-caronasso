@@ -16,9 +16,7 @@ A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-s
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `sprint-1`: versão do projeto para o inicio da documentação, contextualização e especificação 
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
 
@@ -43,10 +41,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 > Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
 
 #### Sprint 1
-- _Scrum master_: AlunaX
-- Protótipos: AlunoY
-- Testes: AlunoK
-- Documentação: AlunaZ
+- Documentação: Todos os alunos
 
 #### Sprint 2
 - _Scrum master_: AlunaY
@@ -64,10 +59,22 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Gabriel Henrique        | Histórias de usuário| 19/02/2025     | 12/03/2025 | ✔️    | 10/03/2025      |
+| Gabriel Henrique        | Slides    | 11/03/2025     | 12/03/2025| ✔️    |     12/03/2025               |
+| Gabriel Henrique        | Introdução  | 12/02/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
+| João Pedro        | contexto| 19/02/2025     | 12/03/2025 | ✔️    | 12/03/2025      |
+| João Pedro        | Requisitos    | 19/02/2025     | 12/03/2025| ✔️    |     26/02/2025               |
+| João Pedro        | Slide  | 11/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
+| Christian Sena    | Personas  | 19/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
+| Christian Sena    | Casos de Uso  | 19/03/2025     | 12/03/2025 | ✔️     |      11/03/2025            |
+| Phillipi Garcia    | Restrições  | 26/02/2025     | 12/03/2025 | ✔️     |      26/02/2025            |
+| Phillipi Garcia    | Problema  | 10/02/2025     | 12/03/2025 | ✔️     |      11/02/2025            |
+| Victor Bryan    | Justificativa  | 19/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
+| Victor Bryan    | Histórias de usuário  | 19/02/2025     | 12/03/2025 | ✔️     |      10/03/2025            |
+| Victor Bryan    | Público Alvo  | 25/02/2025     | 12/03/2025 | ✔️     |      28/02/2025            |
+| Diego Chaves    | Requisitos | 25/02/2025     | 12/03/2025 | ✔️     |      28/02/2025          |
+| Diego Chaves    | Objetivos  | 25/02/2025     | 12/03/2025 | ✔️     |      28/02/2025          |
+| Diego Chaves    | Caso de Uso  | 19/03/2025     | 12/03/2025 | ✔️     |      28/02/2025          |
 
 #### Sprint 2
 
@@ -112,9 +119,9 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
+| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p3-tidai-caronasso.git                           |
 | Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de interface                | Figma                              | http://....                            |
+| Projeto de interface                | Figma                              | https://www.figma.com/design/Efaz88EXfvN9KqMmCncGZg/CARONASSO?node-id=0-1&p=f&t=whokXErv9oHBuCR8-0                        |
 | Gerenciamento do projeto            | GitHub Projects                    | http://....                            |
 | Hospedagem                          | Vercel                             | http://....                            |
  
