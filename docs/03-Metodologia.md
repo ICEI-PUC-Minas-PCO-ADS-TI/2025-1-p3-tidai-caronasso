@@ -16,9 +16,7 @@ A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-s
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `sprint-1`: versão do projeto para o inicio da documentação, contextualização e especificação 
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
 
@@ -64,9 +62,9 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
+| Gabriel Henrique        | Histórias de usuário| 19/03/2024     | 12/03/2024 | ✔️    | 10/03/2024      |
+| Gabriek Henrique        | Slides    | 11/03/2024     | 12/03/2024 | ✔️    |     12/03/2024               |
+| Gabriel Henrique        | Introdução  | 12/02/2024     | 12/03/2005 | ✔️     |      12/02/2024            |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
 #### Sprint 2
