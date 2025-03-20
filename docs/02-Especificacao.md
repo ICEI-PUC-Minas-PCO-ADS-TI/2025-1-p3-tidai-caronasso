@@ -36,15 +36,6 @@ Exemplo: _Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pens
 - Necessidades: Um sistema que permita escolher entre caronas que respeitem sua rotina e horários de aula.
 
 
-> **Links úteis**:
-> - [Rock content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de usuários
 
@@ -119,9 +110,7 @@ Com base nas histórias de usuários, enumere os requisitos da sua solução. Cl
 
 Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
 
-> **Links úteis**:
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [Entenda o que são requisitos de software, a diferença entre requisito funcional e não funcional, e como identificar e documentar cada um deles](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+
 
 ## Restrições
 
