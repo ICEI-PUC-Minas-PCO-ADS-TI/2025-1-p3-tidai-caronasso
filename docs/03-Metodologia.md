@@ -67,8 +67,10 @@ Atualizado em: 21/04/2024
 | João Pedro        | Slide  | 11/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
 | Christian Sena    | Personas  | 19/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
 | Christian Sena    | Casos de Uso  | 19/03/2025     | 12/03/2025 | ✔️     |      11/03/2025            |
-| Phillipi Garcia    | Restrições  | 19/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
-| Phillipi Garcia    | Problema  | 19/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
+| Phillipi Garcia    | Restrições  | 26/02/2025     | 12/03/2025 | ✔️     |      26/02/2025            |
+| Phillipi Garcia    | Problema  | 10/02/2025     | 12/03/2025 | ✔️     |      11/02/2025            |
+| Victor Bryan    | Justificativa  | 19/03/2025     | 12/03/2025 | ✔️     |      12/03/2025            |
+| Victor Bryan    | Histórias de usuário  | 19/02/2025     | 12/03/2025 | ✔️     |      10/03/2025            |
 
 #### Sprint 2
 
