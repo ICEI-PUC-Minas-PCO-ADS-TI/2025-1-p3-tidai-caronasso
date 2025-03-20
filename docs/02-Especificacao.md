@@ -139,9 +139,3 @@ Lembre-se de que cada requisito deve corresponder a uma e somente uma caracterí
 
 ![Diagrama de Casos de Uso](images/CasosDeUsoImagem.drawio.png)
 
-> **Links úteis**:
-> - [Criando casos de uso](https://www.ibm.com/docs/pt-br/engineering-lifecycle-management-suite/design-rhapsody/10.0?topic=cases-creating-use)
-> - [Como criar diagrama de caso de uso: tutorial passo a passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
