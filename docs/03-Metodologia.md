@@ -121,7 +121,7 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-1-p3-tidai-caronasso.git                           |
 | Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de interface                | Figma                              | http://....                            |
+| Projeto de interface                | Figma                              | https://www.figma.com/design/Efaz88EXfvN9KqMmCncGZg/CARONASSO?node-id=0-1&p=f&t=whokXErv9oHBuCR8-0                        |
 | Gerenciamento do projeto            | GitHub Projects                    | http://....                            |
 | Hospedagem                          | Vercel                             | http://....                            |
  
