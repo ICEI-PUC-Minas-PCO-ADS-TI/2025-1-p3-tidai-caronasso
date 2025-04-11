@@ -1,9 +1,11 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
+A equipe do Caronasso optou por uma abordagem colaborativa de trabalho, realizando reuniões semanais via Microsoft Teams para acompanhar o andamento do projeto e alinhar as próximas ações junto ao professor. Além desses encontros regulares, a comunicação foi fortalecida por meio de chamadas extras no Teams e conversas em grupos no WhatsApp, o que facilitou a troca contínua de ideias e decisões entre os integrantes.
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+Na parte técnica, o desenvolvimento foi realizado no Visual Studio Code (VS Code), que proporcionou um ambiente de trabalho ágil e integrado. Para o controle de versão, utilizamos o Git, garantindo organização, rastreabilidade e segurança em cada modificação feita no projeto.
+
+Esse conjunto de ferramentas e métodos foi essencial para manter o time sincronizado e comprometido com os objetivos do Caronasso.
 
 ## Relação de ambientes de trabalho
 
