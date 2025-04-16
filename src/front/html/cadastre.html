@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caronasso</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem Vindo de Volta ao Caronasso</h2>
+                <p class="description description-primary">Para continuar conectado conosco,</p>
+                <p class="description description-primary">Por favor, faça login com suas informações pessoais.</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Crie sua Conta</h2>
+                <div class="imagem-placa">
+                    <a href="./home.html"><img src="../assets/img/CARONASSO - FIGMA.svg" alt=""></a>
+                </div><!-- imagem-placa-->
+                <p class="description description-second">Use seu e-mail institucional para registro:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome Completo">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="@sga.pucminas.br">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fa-thin fa-graduation-cap"></i>
+                        <input type="text" list="my-options" placeholder="Selecione seu Curso">
+                        <datalist id="my-options">
+                            <option value="Administração">
+                            <option value="Biomedicina">
+                            <option value="Ciências Contábeis">
+                            <option value="Direito">
+                            <option value="Medicina">
+                            <option value="Sistemas de Informação">
+                            <option value="Tecnologia em Análise e Desenvolv. de Sistemas">
+                          </datalist>
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">Cadastrar</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Caronasso!</h2>
+                <p class="description description-primary">Digite seus dados pessoais</p>
+                <p class="description description-primary">e comece sua jornada conosco.</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Entrar no Caronasso</h2>
+                
+                <p class="description description-second">Use sua conta de e-mail institucional:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="@sga.pucminas.br">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

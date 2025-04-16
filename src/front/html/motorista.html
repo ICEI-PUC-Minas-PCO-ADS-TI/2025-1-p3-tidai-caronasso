@@ -3,23 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/global.css">
     <title>Caronasso</title>
 </head>
 <body>
- <header>
-    <nav>
-        <a href="./home.html"><img class="logoimg" src="../assets/img/CARONASSO - FIGMA.svg" alt="Logo Caronasso"></a>
-        <ul class="nav-list">
-            <li><a href="./home.html">Início</a></li>
-            <li><a href="./passageiro.html">Passageiro</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-        </ul>
-    </nav>
- </header>
- 
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./home.html"><img class="logoimg" src="../assets/img/CARONASSO - FIGMA.svg" alt=""></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./motorista.html" class="nav-link">Motorista</a></li>
+                    <li class="nav-item"><a href="./passageiro.html" class="nav-link">Passageiro</a></li>
+                    <li class="nav-item"><a href="./cadastre.html" class="nav-link">Cadastre</a></li>
+                    <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">sair</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./motorista.html" class="nav-link">Motorista</a></li>
+                <li class="nav-item"><a href="./passageiro.html" class="nav-link">Passageiro</a></li>
+                <li class="nav-item"><a href="./cadastre.html" class="nav-link">Cadastre</a></li>
+                <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="./cadastre.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+       
+        <div class="sidebar">
+            <h2>Adicionar um Local</h2>
+            
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="Pesquise o endereço">
+
+                <button class="procurar" onclick="document.getElementById('searchBox').dispatchEvent(new Event('change'))">
+                    Procurar
+                </button>
+            </div>
+            
+            <ul class="location-list" id="locationList">
+                <li>
+                    <iframe class="mini-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.0663%2C-19.9346%2C-44.0563%2C-19.9246&layer=mapnik&marker=-19.9346%2C-44.0663"></iframe>
+                    <div class="location-info">
+                        <p><a href="https://www.openstreetmap.org/?mlat=-19.9346&mlon=-44.0663#map=16/-19.9346/-44.0663" target="_blank">Big Shopping</a></p>
+                        <p>Av. João César de Oliveira, 1275</p>
+                        <p>Centro - Contagem</p>
+                    </div>
+                </li>
+                <li>
+                    <iframe class="mini-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.0519%2C-19.9336%2C-44.0419%2C-19.9236&layer=mapnik&marker=-19.9336%2C-44.0519"></iframe>
+                    <div class="location-info">
+                        <p><a href="https://www.openstreetmap.org/?mlat=-19.9336&mlon=-44.0519#map=16/-19.9336/-44.0519" target="_blank">Shopping Eldorado</a></p>
+                        <p>Av. João César de Oliveira, 1500</p>
+                        <p>Eldorado - Contagem</p>
+                    </div>
+                </li>
+                <li>
+                    <iframe class="mini-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.0720%2C-19.9416%2C-44.0620%2C-19.9316&layer=mapnik&marker=-19.9416%2C-44.0720"></iframe>
+                    <div class="location-info">
+                        <p><a href="https://www.openstreetmap.org/?mlat=-19.9416&mlon=-44.0720#map=16/-19.9416/-44.0720" target="_blank">Supermercado BH</a></p>
+                        <p>Rua Rio Grande do Sul, 500</p>
+                        <p>Eldorado - Contagem</p>
+                    </div>
+                </li>
+                <li>
+                    <iframe class="mini-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.0621%2C-19.9383%2C-44.0521%2C-19.9283&layer=mapnik&marker=-19.9383%2C-44.0621"></iframe>
+                    <div class="location-info">
+                        <p><a href="https://www.openstreetmap.org/?mlat=-19.9383&mlon=-44.0621#map=16/-19.9383/-44.0621" target="_blank">Mercado Municipal de Contagem</a></p>
+                        <p>Av. Getúlio Vargas, 1000</p>
+                        <p>Centro - Contagem</p>
+                    </div>
+                </li>
+                <li>
+                    <iframe class="mini-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.0803%2C-19.9392%2C-44.0703%2C-19.9292&layer=mapnik&marker=-19.9392%2C-44.0803"></iframe>
+                    <div class="location-info">
+                        <p><a href="https://www.openstreetmap.org/?mlat=-19.9392&mlon=-44.0803#map=16/-19.9392/-44.0803" target="_blank">Estádio do Eldorado</a></p>
+                        <p>Rua Prefeito Francisco de Paula, 340</p>
+                        <p>Eldorado - Contagem</p>
+                    </div>
+                </li>
+                <li>
+                    <iframe class="mini-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.0725%2C-19.9351%2C-44.0625%2C-19.9251&layer=mapnik&marker=-19.9351%2C-44.0725"></iframe>
+                    <div class="location-info">
+                        <p><a href="https://www.openstreetmap.org/?mlat=-19.9351&mlon=-44.0725#map=16/-19.9351/-44.0725" target="_blank">Shopping Contagem</a></p>
+                        <p>Av. Severino Ballesteros, 1200</p>
+                        <p>Centro - Contagem</p>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </div>
+
+
+        <div class="map-container">
+            <h1 class="map-title">Adicione seu trajeto e ajude alguém a chegar ao destino!</h1>
+            <iframe id="mapFrame" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.1529%2C-20.0386%2C-43.9529%2C-19.8386&layer=mapnik&marker=-19.9386%2C-44.0529"></iframe>
+            <br/><small><a href="https://www.openstreetmap.org/?mlat=-19.9386&mlon=-44.0529#map=12/-19.9386/-44.0529">Ver mapa ampliado</a></small>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

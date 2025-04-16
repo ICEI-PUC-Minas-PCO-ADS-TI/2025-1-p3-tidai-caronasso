@@ -3,33 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/global.css">
     <title>Caronasso</title>
 </head>
 <body>
- <header>
-    <nav>
-        <a href="./home.html"><img class="logoimg" src="../assets/img/CARONASSO - FIGMA.svg" alt="Logo Caronasso"></a>
-        
-        <ul class="nav-list">
-            <li><a href="./motorista.html">Motorista</a></li>
-            <li><a href="./passageiro.html">Passageiro</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="./login.html">Cadastre</a></li>
-        </ul>
-    </nav>
- </header>
- <div class="main-container">
-    <div class="frase">
-        <p>"Carona Universitária: conecte-se com quem vai na mesma direção. <span class="caronassomeio">Caronasso,</span> sua jornada mais inteligente!"</p>
-        <button class="btn"><a href="./login.html">Login</a></button>
-    </div> 
-    <div class="car-image">
-        <img class="carroimagem" src="../assets/img/fotoCarro.png" alt="Imagem Carro">
-    </div>
-</div>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./home.html"><img class="logoimg" src="../assets/img/CARONASSO - FIGMA.svg" alt=""></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./motorista.html" class="nav-link">Motorista</a></li>
+                    <li class="nav-item"><a href="./passageiro.html" class="nav-link">Passageiro</a></li>
+                    <li class="nav-item"><a href="./cadastre.html" class="nav-link">Cadastre</a></li>
+                    <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="./cadastre.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./motorista.html" class="nav-link">Motorista</a></li>
+                <li class="nav-item"><a href="./passageiro.html" class="nav-link">Passageiro</a></li>
+                <li class="nav-item"><a href="./cadastre.html" class="nav-link">Cadastre</a></li>
+                <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="./cadastre.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="frase">
+            <p class="letraInicio">"Carona Universitária: conecte-se com quem vai na mesma direção. <span class="caronassomeio">Caronasso,</span> sua jornada mais inteligente!"</p>
+            <div class="login-button">
+                <button><a href="./cadastre.html">Entrar</a></button>
+            </div>
+        </div> 
+        <div class="car-image">
+            <img class="carroimagem" src="../assets/img/fotoCarro.png" alt="Imagem Carro">
+        </div>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

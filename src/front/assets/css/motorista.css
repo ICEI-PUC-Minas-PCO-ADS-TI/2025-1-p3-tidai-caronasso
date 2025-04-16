@@ -1,0 +1,87 @@
+
+.container {
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 20px;
+}
+
+h2 {
+    color: #003366;
+    margin-left: 15%;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: #E8F1F2;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.search-container {
+    margin-bottom: 40px;
+}
+
+.sidebar input {
+    width: 300px;
+    padding: 5px;
+    align-items: center;
+}
+
+.location-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.location-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 400px; 
+    overflow-y: scroll; 
+    border: 1px solid #ddd;
+}
+
+.mini-map {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.location-info p {
+    margin: 0;
+    font-size: 18px; 
+}
+.location-info p a {
+    color: #003366; 
+}
+
+
+.map-container {
+    width: 70%; 
+    padding: 20px;
+    height: 100%; 
+}
+
+.map-container iframe {
+    width: 100%;
+    height: calc(100% - 50px); 
+    border: 1px solid ;
+}
+
+.procurar {
+    color: #e8f1f2;
+    font-size: 18px; 
+    padding: 5px;
+    margin-left: 25%;
+    background-color: #13293d;
+}
+.map-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
