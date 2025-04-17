@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caronas Disponíveis</title>
+  <link rel="stylesheet" href="../assets/css/global.css"/>
+  <link rel="stylesheet" href="../assets/css/caronas.css"/>
+</head>
+<body>
+  <!-- Cabeçalho padrão -->
+  <header class="header-blue">
+    <div class="header-content">
+      <div class="logo">
+        <img class="logoimg" src="../assets/img/CARONASSO - FIGMA.svg" alt="Logo Caronasso">
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="motorista.html">Motorista</a></li>
+          <li><a href="passageiro.html">Passageiro</a></li>
+          <li><a href="cadastre.html">Cadastre-se</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <button class="btn-logout">Sair</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="flex:1; display:flex; flex-direction:column;">
+    <h1 class="rides-header">Caronas Disponíveis</h1>
+
+    <!-- Motorista -->
+    <section class="rides-list">
+        <article class="ride-item">
+          <a href="perfilMotorista.html?id=1" class="driver-profile-link">
+            <div class="driver-photo">
+              <img src="../assets/img/fotoCarro.png" alt="Foto do motorista"/>
+            </div>
+            <div class="ride-info">
+              <div class="driver-name">Christian Sena</div>
+              <div class="route">
+                <span>Rua Shopping →</span>
+                <span>Av. José de Oliveira, 1234</span>
+              </div>
+            </div>
+          </a>
+          <button class="btn-confirm">Confirmar Carona</button>
+        </article>
+      </section>
+  
+
+    <!-- Mapa  -->
+    <aside class="map-container" style="flex:1; margin-top:1rem;">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-44.1529%2C-20.0386%2C-43.9529%2C-19.8386&layer=mapnik&marker=-19.9386%2C-44.0529" allowfullscreen loading="lazy"></iframe>
+      <br/><small><a href="https://www.openstreetmap.org/?mlat=-19.9386&mlon=-44.0529#map=12/-19.9386/-44.0529" target="_blank" rel="noopener">Ver mapa ampliado</a></small>
+    </aside>
+
+    <script src="../assets/js/script.js"></script>
+  </main>
+</body>
+</html>
