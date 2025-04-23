@@ -81,8 +81,8 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Wireframes   | 13/03/2025     | 09/04/2025 | ✔️    | 17/03/2025     |
-| AlunaX        | UserFlow   | 18/03/2025     | 09/04/2025 | ✔️    | 18/03/2025     |
+| Gabriel Henrique        | Wireframes   | 13/03/2025     | 09/04/2025 | ✔️    | 17/03/2025     |
+| Gabriel Henrique        | UserFlow   | 18/03/2025     | 09/04/2025 | ✔️    | 18/03/2025     |
 | AlunaX        | Template Padrão   | 19/03/2025     | 09/04/2025 | ✔️    | 08/04/2025     |
 | AlunaX        | Diagrama de Fluxo| 19/03/2025     | 09/04/2025 | ✔️    | 08/04/2025     |
 
