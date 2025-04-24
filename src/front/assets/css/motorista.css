@@ -1,19 +1,22 @@
-.container {
+.containerMotorista {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 30px;
+
 }
 
 h2 {
-    color: #003366;
+    color: #E8f1f2;
     margin-left: 15%;
 }
 
-.sidebar {
+.sidebarMotorista {
     width: 400px;
-    background-color: #E8F1F2;
+    background-color: #13293D;
     padding: 20px;
     flex-shrink: 0;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
 .route-form {
@@ -30,7 +33,7 @@ h2 {
 }
 
 .route-form button {
-    background-color: #003366;
+    background-color: #004aad;
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -39,7 +42,7 @@ h2 {
 }
 
 .route-form button:hover {
-    background-color: #13293d;
+    background-color: #1b98e0;
 }
 
 .location-list {

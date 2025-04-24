@@ -66,3 +66,12 @@ document.getElementById("addRoute").addEventListener("click", function () {
     }
 });
 
+
+//Passageiros
+
+// Função para confirmar carona
+document.querySelectorAll('.confirm-button').forEach(button => {
+    button.addEventListener('click', function() {
+        alert("Carona Confirmada!");
+    });
+})

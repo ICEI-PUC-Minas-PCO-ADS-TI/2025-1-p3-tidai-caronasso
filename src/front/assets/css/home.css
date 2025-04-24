@@ -66,6 +66,7 @@ a:hover {
 .carroimagem {
     width: 700px;    
 }
+
 @media screen and (max-width: 1115px) {
     .carroimagem {
         width: 450px;    
@@ -152,6 +153,9 @@ header {
     border-radius: 5px;
     background-color: #003366;
 }
+.login-button button:hover{
+    background-color: #1b98e0;
+}
 
 .login-button button a {
     text-decoration: none;
@@ -175,6 +179,12 @@ header {
     display: none;
 }
 
+.btn-secondHome {
+    background-color: #1b98e0;
+}
+.btn-secondHome:hover {
+    background-color: #004aad;
+}
 @media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;

@@ -1,0 +1,119 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.h2Passageiro {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.h2Passageiro h2 {
+    font-size: 24px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.searchInput {
+    width: 40% !important;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 40px;
+}
+/* Sidebar - onde as caronas são exibidas */
+.sidebar {
+    width: 60%;
+    height: 90%;
+    background-color: #13293d;
+    padding: 30px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+/* Cabeçalho da página de Caronas Disponíveis */
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Campo de busca para trajetos */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Exibição de cada carona disponível */
+.carona {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+}
+
+.carona:hover {
+    background-color: #d0d0d0;
+}
+
+/* Info do passageiro (foto e nome) */
+.passenger-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.driver-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.driver-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.carona-details {
+    flex-grow: 1;
+}
+
+.route {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.confirm-button {
+    padding: 10px;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+
+
+.mapContainerCarona {
+    width:325px;
+    height: 550px;
+    border: 1px solid black;
+    margin-left: 30px;
+}
