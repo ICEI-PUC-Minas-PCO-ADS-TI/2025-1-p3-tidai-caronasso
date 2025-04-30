@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link rel="stylesheet" href="../assets/css/global.css">
-    <title>Caronasso</title>
+
+    <title>Chat | Manual do Dev</title>
 </head>
 <body>
-    <header>
+     <header>
         <nav class="nav-bar">
             <div class="logo">
                 <a href="./home.html"><img class="logoimg" src="../assets/img/CARONASSO - FIGMA.svg" alt=""></a>
@@ -18,8 +21,6 @@
                     <li class="nav-item"><a href="./passageiro.html" class="nav-link">Passageiro</a></li>
                     <li class="nav-item"><a href="./cadastre.html" class="nav-link">Cadastre</a></li>
                     <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="./consultarcaronas.html" class="nav-link">consultas</a></li>
-                    <li class="nav-item"><a href="./perfil.html" class="nav-link">Perfil</a></li>
                 </ul>
             </div>
             <div class="login-button">
@@ -36,26 +37,49 @@
                 <li class="nav-item"><a href="./passageiro.html" class="nav-link">Passageiro</a></li>
                 <li class="nav-item"><a href="./cadastre.html" class="nav-link">Cadastre</a></li>
                 <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
-                
             </ul>
 
             <div class="login-button">
-                <button><a href="./cadastre.html">Entrar</a></button>
+                <button><a href="./cadastre.html">Sair</a></button>
             </div>
         </div>
     </header>
 
-    <div class="main-container">
-        <div class="frase">
-            <p class="letraInicio">"Carona Universitária: conecte-se com quem vai na mesma direção. <span class="caronassomeio">Caronasso,</span> sua jornada mais inteligente!"</p>
-            <div>
-                <button class="btn btn-secondHome"><a href="./cadastre.html">Entrar</a></button>
-            </div>
-        </div> 
-        <div class="car-image">
-            <img class="carroimagem" src="../assets/img/fotoCarro.png" alt="Imagem Carro">
-        </div>
 
-    <script src="../assets/js/script.js"></script>
+    <div class="chat-container">
+        <div class="sidebar">
+          <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Pesquisar..." onkeyup="searchUser()">
+            <button class="btn-secondChat" onclick="searchUser()">Pesquisar</button>
+          </div>
+          <ul id="userList">
+            <li class="user" onclick="startChat('Bryan')">
+              <img src="../assets/img/garoto-chat.png" alt="Usuário 1" class="user-avatar">
+              <span>Bryan</span>
+            </li>
+            <li class="user" onclick="startChat('Philipi')">
+              <img src="../assets/img/garoto-chat.png" alt="Usuário 2" class="user-avatar">
+              <span>Philipi</span>
+            </li>
+            <li class="user" onclick="startChat('João')">
+              <img src="../assets/img/garoto-chat.png" alt="Usuário 3" class="user-avatar">
+              <span>João</span>
+            </li>
+          </ul>
+        </div>
+        <div class="chat-box" id="chatBox">
+          <div class="messages" id="messages">
+
+          </div>
+          <div class="message-input">
+            <input type="text" id="messageInput" placeholder="Digite uma mensagem..." onkeyup="sendMessage(event)">
+            <button onclick="sendMessage()">Enviar</button>
+          </div>
+        </div>
+      </div>
+    
+    
+
+    <script src="../assets/js/chat.js"></script>
 </body>
 </html>

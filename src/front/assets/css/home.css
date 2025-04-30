@@ -67,6 +67,16 @@ a:hover {
     width: 700px;    
 }
 
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #003366;
+}
+.login-button button:hover{
+    background-color: #1b98e0;
+}
+
 @media screen and (max-width: 1115px) {
     .carroimagem {
         width: 450px;    
