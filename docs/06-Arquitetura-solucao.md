@@ -47,42 +47,68 @@ Insira aqui o script de criação das tabelas do banco de dados.
 Veja um exemplo:
 
 ```sql
--- Criação da tabela Medico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+USE caronasso;
+
+-- Criação da tabela Usuario 
+CREATE TABLE IF NOT EXISTS Usuario(
+	id INTEGER AUTO_INCREMENT,
+    data_cadastro DATE,
+    nome VARCHAR(80),
+    email VARCHAR(80),
+    senha VARCHAR(80),
+    endereco VARCHAR(150),
+    descricao VARCHAR(250),
+    curso VARCHAR(80),
+    genero VARCHAR(20),
+    disponivel BOOL,
+    CONSTRAINT pk_id PRIMARY KEY(id),
+    CONSTRAINT genero_valido CHECK (genero IN ("homem", "mulher", "outro")) 
 );
 
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+-- Criação da tabela Chat 
+CREATE TABLE IF NOT EXISTS Chat(
+	id INTEGER AUTO_INCREMENT,
+    id_usuario1 INTEGER,
+    id_usuario2 INTEGER,
+    CONSTRAINT PRIMARY KEY(id),
+    CONSTRAINT fk_usuario1 FOREIGN KEY(id_usuario1) REFERENCES usuario.id,
+    CONSTRAINT fk_usuario2 FOREIGN KEY(id_usuario2) REFERENCES usuario.id
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
+-- Criação da tabela Mensagem 
+CREATE TABLE IF NOT EXISTS Mensagem(
+	id INTEGER AUTO_INCREMENT,
+    id_chat INTEGER,
+    id_remetente INTEGER,
+    conteudo VARCHAR(400),
+    horario_envio DATETIME,
+    CONSTRAINT PRIMARY KEY(id),
+    CONSTRAINT fk_chat FOREIGN KEY(id_chat) REFERENCES chat(id),
+    CONSTRAINT fk_remetente FOREIGN KEY(id_remetente) REFERENCES usuario(id)
 );
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
+-- Criação da tabela Viagem 
+CREATE TABLE IF NOT EXISTS Viagem(
+	id INTEGER AUTO_INCREMENT,
+	id_motorista INTEGER,
+	origem VARCHAR(150),
+	destino VARCHAR(150),
+	data_partida DATE,
+	vagas_disponiveis INTEGER,
+	description TEXT,
+	CONSTRAINT PRIMARY KEY(id),
+	CONSTRAINT fk_motorista FOREIGN KEY(id_motorista) REFERENCES usuario(id)
 );
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
+-- Criação da tabela ViagemPassageiro 
+CREATE TABLE IF NOT EXISTS ViagemPassageiro(
+	id INTEGER AUTO_INCREMENT,
+	id_viagem INTEGER,
+	id_passageiro INTEGER,
+	status VARCHAR(20),
+	CONSTRAINT PRIMARY KEY(id),
+	CONSTRAINT fk_viagem FOREIGN KEY(id_viagem) REFERENCES viagem(id),
+	CONSTRAINT fk_passageiro FOREIGN KEY(id_passageiro) REFERENCES usuario(id)
 );
 ```
 Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
