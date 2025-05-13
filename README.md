@@ -6,7 +6,7 @@
 
 `3º semestre/2025`
 
-O objetivo consiste em fornecer uma aplicação com foco na oferta e procura de caronas, com foco em caronas recorrentes. A intenção é criar um "marketplace" que permita a comunicação entre o passageiro e o motorista, permitindo um acordo mútuo entre os usuários para que seja marcadas "corridas" em torno da faculdade.
+O objetivo consiste em fornecer uma aplicação com foco na oferta e procura de caronas, com foco em caronas recorrentes. A intenção é criar um "Networking" que permita a comunicação entre o passageiro e o motorista, permitindo um acordo mútuo entre os usuários para que seja marcadas "corridas" em torno da faculdade.
 
 
 
