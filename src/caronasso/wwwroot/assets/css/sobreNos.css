@@ -1,0 +1,89 @@
+.sobre-nos {
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titulo-sobre-nos {
+    font-size: 50px;
+    color: #13293d;
+    margin-bottom: 40px;
+}
+
+.descricao-sobre-nos {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+    max-width: 900px;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.membro-equipe {
+    text-align: center;
+    max-width: 200px;
+}
+
+.foto-membro {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nome-membro {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2980B9;
+}
+.titulo-objetivos {
+    font-size: 40px;
+    color: #13293d;
+    margin-bottom: 40px;
+    padding: 40px;
+    text-align: center;
+}
+.lista-objetivos {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.lista-objetivos li {
+    margin-bottom: 10px;
+}
+
+.lista-objetivos li strong {
+    color: #13293d;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .titulo-sobre-nos {
+        font-size: 28px;
+    }
+
+    .descricao-sobre-nos, .lista-objetivos li {
+        font-size: 16px;
+    }
+
+    .nome-membro {
+        font-size: 18px;
+    }
+
+    .equipe {
+        flex-direction: column;
+        align-items: center;
+    }
+}

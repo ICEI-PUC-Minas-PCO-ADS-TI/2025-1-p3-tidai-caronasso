@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+ *@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/global.css">
+    <title>Caronasso</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="frase">
+            <p class="letraInicio">"Carona Universitária: conecte-se com quem vai na mesma direção. <span class="caronassomeio">Caronasso,</span> sua jornada mais inteligente!"</p>
+            <div>
+                <button class="btn btn-secondHome"><a asp-controller="Auth" asp-action="Index">Entrar</a></button>
+            </div>
+        </div>
+        <div class="car-image">
+            <img class="carroimagem" src="~/assets/img/fotoCarro.png" alt="Imagem Carro">
+        </div>
+    </div>
+
+    <script src="~/assets/js/script.js"></script>
+    <script>
+        @if(TempData["Alerta"] != null)
+        {
+            <text>
+                alert("@TempData["Alerta"]");
+            </text>
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿@model caronasso.Models.Carona
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@* <h1>Create</h1>
+
+<h4>Carona</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Origem" class="control-label"></label>
+                <input asp-for="Origem" class="form-control" />
+                <span asp-validation-for="Origem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Destino" class="control-label"></label>
+                <input asp-for="Destino" class="form-control" />
+                <span asp-validation-for="Destino" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorarioSaida" class="control-label"></label>
+                <input asp-for="HorarioSaida" class="form-control" />
+                <span asp-validation-for="HorarioSaida" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VagasDisponiveis" class="control-label"></label>
+                <input asp-for="VagasDisponiveis" class="form-control" />
+                <span asp-validation-for="VagasDisponiveis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotoristaId" class="control-label"></label>
+                <select asp-for="MotoristaId" class ="form-control" asp-items="ViewBag.MotoristaId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div> *@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/global.css">
+    <title>Caronasso</title>
+</head>
+<body>
+    <div class="containerMotorista">
+        <div class="sidebarMotorista">
+            <h2>Cadastrar Rota</h2>
+            <form asp-action="Create" class="route-form">
+                <input asp-for="Origem" id="startLocation" placeholder="Origem">
+                <span asp-validation-for="Origem" class="text-danger"></span>
+                <input asp-for="Destino" id="endLocation" placeholder="Destino">
+                <span asp-validation-for="Destino" class="text-danger"></span>
+                <input asp-for="HorarioSaida" id="rideTime">
+                <span asp-validation-for="HorarioSaida" class="text-danger"></span>
+                <input asp-for="VagasDisponiveis" id="seatCount" placeholder="Vagas disponíveis">
+                <span asp-validation-for="VagasDisponiveis" class="text-danger"></span>
+                @* <select type="hidden" asp-for="MotoristaId" asp-items="ViewBag.MotoristaId" placeholder="Vagas disponíveis"></select> *@
+                <button type="submit" value="Create" id="addRoute">Cadastrar Rota</button>
+            </form>
+            <a asp-action="CaronasMotorista" class="btn btn-dark rounded-0 w-100 py-3">Ver rotas cadastradas</a>
+
+            <h2>Caronas Disponíveis</h2>
+            <ul class="location-list" id="routeList"></ul>
+        </div>
+
+        <div class="map-container">
+            <h1 class="map-title">Adicione seu trajeto e ajude alguém a chegar ao destino!</h1>
+            <iframe id="mapFrame" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.1529%2C-20.0386%2C-43.9529%2C-19.8386&layer=mapnik&marker=-19.9386%2C-44.0529"></iframe>
+            <div id="addressDisplay" class="address-box"></div>
+        </div>
+    </div>
+
+    <script src="~/assets/js/script.js"></script>
+</body>
+</html>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

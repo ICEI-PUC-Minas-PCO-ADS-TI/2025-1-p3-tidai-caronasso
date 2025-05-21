@@ -1,0 +1,189 @@
+﻿@model IEnumerable<caronasso.Models.Chat>
+
+@{
+    ViewData["Title"] = "Index";
+    var currentUserId = ViewBag.currentUserId;
+}
+
+@* <h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Conteudo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioEnvio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Conteudo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioEnvio)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table> *@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="~/assets/css/global.css">
+
+    <title>Chats</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Pesquisar..." onkeyup="searchUser()">
+                <button class="btn-secondChat">Pesquisar</button>
+            </div>
+            <ul id="userList">
+                @{
+                    string? otherPersonName = "";
+                    @foreach (var item in Model)
+                    {
+                        @if(item.Participantes.Count == 2)
+                        {
+                            var otherPerson = item.Participantes.FirstOrDefault(chatp => chatp.UsuarioId != currentUserId);
+                            otherPersonName = otherPerson?.Usuario.Nome;
+                            <li class="user-chat-item user" data-chat-id="@item.Id" onclick="startChat('Bryan')">
+                                <img src="~/assets/img/garoto-chat.png" alt="Usuário 1" class="user-avatar">
+                                <span>@otherPersonName</span>
+                            </li>
+                        }
+
+                    }
+                }
+                @* <li class="user" onclick="startChat('Bryan')">
+                    <img src="~/assets/img/garoto-chat.png" alt="Usuário 1" class="user-avatar">
+                    <span>Bryan</span>
+                </li>
+                <li class="user" onclick="startChat('Philipi')">
+                    <img src="~/assets/img/garoto-chat.png" alt="Usuário 2" class="user-avatar">
+                    <span>Philipi</span>
+                </li>
+                <li class="user" onclick="startChat('João')">
+                    <img src="~/assets/img/garoto-chat.png" alt="Usuário 3" class="user-avatar">
+                    <span>João</span>
+                </li> *@
+            </ul>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="messages" id="messages">
+                <!-- Aqui vão as mensagens! -->
+            </div>
+            <div class="message-input">
+                <input type="text" id="messageInput" placeholder="Digite uma mensagem...">
+                <button id="sendMsgButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .messages {
+            overflow-y: scroll;
+        }
+        .chat-message {
+            background-color: darkolivegreen;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            
+            & .chat-message-name {
+                color: lightseagreen
+            }
+
+            & .chat-message-content {
+                color: white;
+            }
+        }
+    </style>
+
+    <script defer>
+        // Preciso mudar depois para que ao receber uma mensagem ela apareça automaticamente
+        var allChats = document.getElementsByClassName("user-chat-item");
+        const messagesDiv = document.getElementById("messages");
+        const msgInput = document.getElementById("messageInput");
+        const sendMsgBtn = document.getElementById("sendMsgButton");
+        var openChatId = null;
+
+        for(let i = 0; i < allChats.length; i++) {
+            let chatBtn = allChats[i];
+            chatBtn.addEventListener("click", async () => {
+                const chatId = chatBtn.getAttribute("data-chat-id");
+                openChatId = chatId;
+                const response = await fetch(`/Chats/GetMessages?chatId=${chatId}`);
+                const messages = await response.json();
+
+                messagesDiv.innerHTML = "";
+
+                messages.forEach(msg => {
+                    console.log(msg);
+                    const msgElement = document.createElement("div");
+                    msgElement.classList.add("chat-message");
+
+                    const nameElement = document.createElement("span");
+                    nameElement.classList.add("chat-message-name");
+
+                    const contentElement = document.createElement("p");
+                    contentElement.classList.add("chat-message-content");
+
+                    const sendTimeElement = document.createElement("span");
+                    sendTimeElement.classList.add("chat-message-time");
+
+                    nameElement.textContent = msg.remetente;
+                    contentElement.textContent = msg.conteudo;
+                    sendTimeElement.textContent = msg.horario;
+
+                    msgElement.appendChild(nameElement);
+                    msgElement.appendChild(contentElement);
+                    msgElement.appendChild(sendTimeElement);
+
+                    messagesDiv.appendChild(msgElement);
+                });
+            });
+        }
+
+        sendMsgBtn.addEventListener("click", enviarMsg);
+
+        function enviarMsg() {
+            if(openChatId == null) { return; }
+            let msg = msgInput.value;
+            msgInput.value = "";
+
+            fetch("/Chats/SendMessage", {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                method: "POST",
+                body: JSON.stringify({'ChatId': parseInt(openChatId), 'Conteudo': msg})
+            });
+        }
+    </script>
+
+    <script src="~/assets/js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+﻿@model caronasso.Models.Chat
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@* <h1>Create</h1>
+
+<h4>Chat</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Conteudo" class="control-label"></label>
+                <input asp-for="Conteudo" class="form-control" />
+                <span asp-validation-for="Conteudo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorarioEnvio" class="control-label"></label>
+                <input asp-for="HorarioEnvio" class="form-control" />
+                <span asp-validation-for="HorarioEnvio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div> *@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+    <title>Chats - Confirmação</title>
+</head>
+<body>
+    <main>
+        <h1>Confirmação Chat</h1>
+        
+        <form asp-action="CreateChat" asp-route-destinatarioId="@ViewBag.DestinatarioId">
+            <img width="200px" src="~/assets/img/testimg.png" alt="Imagem Destinatário" />
+            <h2>@ViewBag.DestinatarioNome</h2>
+            <button type="submit" value="CreateChat">Iniciar Chat</button>
+        </form>
+    </main>
+    <script src="~/assets/js/chat.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           & form {
+               display: flex;
+               flex-direction: column;
+               padding: 75px 150px;
+               background-color: #004aad;
+               border-radius: 5px;
+               margin-top: 50px;
+               align-items: center;
+
+               & h2 {
+                   color: white;
+               }
+
+               & button {
+                   border: none;
+                   border-radius: 5px;
+                   padding: 10px 30px;
+                   color: #004aad;
+                   background: lightgray;
+               }
+               & button:hover {
+                   color: blue;
+                   background-color: white;
+                   transition: background-color 0.5s ease-in-out;
+               }
+           }
+        }
+        
+    </style>
+</body>
+</html>

@@ -1,0 +1,138 @@
+﻿@model IEnumerable<caronasso.Models.Carona>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@* <h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Origem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VagasDisponiveis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Motorista)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Origem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VagasDisponiveis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Motorista.Email)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table> *@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/global.css">
+    <title>Passageiro</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: dodgerblue; margin-top: 15px;">Caronas - Passageiro</h1>
+    <div class="h2Passageiro">
+        <h2>Caronas Disponíveis</h2>
+        <input onkeyup="searchCarona()" class="searchInput" type="text" id="searchInput" placeholder="Pesquisar Trajeto">
+        <button class="btn btn-second">buscar</button>
+        <a asp-action="MinhasCaronas" class="btn btn-second">Minhas Caronas</a>
+    </div>
+    <div class="container">
+
+        <div class="sidebar">
+            @foreach (var item in Model)
+            {
+                @if(item.VagasDisponiveis > 0)
+                {
+                    <div class="carona">
+                        <div class="passenger-info">
+                            <img src="~/assets/img/garoto.png" alt="Christian Sena" class="driver-img">
+                            <a asp-controller="Usuarios" asp-action="Details" asp-route-id="@item.MotoristaId" class="driver-name">@Html.DisplayFor(modelItem => item.Motorista.Nome)</a>
+                        </div>
+                        <div class="carona-details">
+                            <div class="route">
+                                <span style="color: black">Destino: <br>@Html.DisplayFor(modelItem => item.Destino)</span>
+                            </div>
+                            <a asp-action="Details" asp-route-id="@item.Id"><button class="confirm-button">Detalhes Carona</button></a>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+        @* <div id="mapContainer">
+            <h2>Mapa de Localização</h2>
+            <iframe class="mapContainerCarona" id="mapFrame" src="https://www.openstreetmap.org/export/embed.html?bbox=-44.1529%2C-20.0386%2C-43.9529%2C-19.8386&layer=mapnik&marker=-19.9386%2C-44.0529"></iframe>
+            <br />
+            <small><a href="https://www.openstreetmap.org/?#map=4/-17.56/-70.66" target="_blank">Ver mapa ampliado</a></small>
+        </div> *@
+    </div>
+    <script defer>
+        let searchInput = document.getElementsByClassName("searchInput")[0];
+        let caronas = document.getElementsByClassName("carona");
+
+        function searchCarona() {
+            for(let i = 0; i < caronas.length; i++) {
+                let destino = caronas[i].children[1].children[0].innerText.toLowerCase();
+
+                if(!destino.includes(searchInput.value.toLowerCase())) 
+                {
+                    caronas[i].classList.add("esconder-rota");
+                }
+                else 
+                {
+                    caronas[i].classList.remove("esconder-rota");
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .esconder-rota {
+            display: none;
+        }
+        .driver-name {
+            color: gray;
+        }
+    </style>
+
+    <script src="~/assets/js/script.js"></script>
+</body>
+</html>
