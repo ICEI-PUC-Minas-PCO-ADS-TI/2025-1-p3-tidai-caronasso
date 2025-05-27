@@ -75,12 +75,15 @@ namespace caronasso.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
+            carona.VagasDisponiveis += 1;
+
             var caronaPassageiro = await _context.CaronaPassageiros
                 .FirstOrDefaultAsync(cp => cp.CaronaId == caronaId && cp.UsuarioId == usuarioId);
 
             if (caronaPassageiro != null)
             {
                 _context.Remove(caronaPassageiro);
+                _context.Update(carona);
                 await _context.SaveChangesAsync();
                 //TempData["Alerta"] = "Carona excluída com sucesso!";
             }
