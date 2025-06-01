@@ -20,6 +20,18 @@ public class AppDbContext : DbContext
             .WithMany(u => u.CaronasComoPassageiro)
             .HasForeignKey(caronap => caronap.UsuarioId)
             .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<AvaliacaoUsuario>()
+            .HasOne(a => a.UsuarioAvaliado)
+            .WithMany(u => u.AvaliacoesRecebidas)
+            .HasForeignKey(a => a.UsuarioAvaliadoId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<AvaliacaoUsuario>()
+            .HasOne(a => a.UsuarioAvaliador)
+            .WithMany(u => u.AvaliacoesEnviadas)
+            .HasForeignKey(a => a.UsuarioAvaliadorId)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 
     public DbSet<Usuario> Usuarios { get; set; }
@@ -28,4 +40,5 @@ public class AppDbContext : DbContext
     public DbSet<ChatParticipante> ChatParticipantes { get; set; }
     public DbSet<Carona> Caronas { get; set; }
     public DbSet<CaronaPassageiro> CaronaPassageiros { get; set; }
+    public DbSet<AvaliacaoUsuario> AvaliacoesUsuarios { get; set; }
 }

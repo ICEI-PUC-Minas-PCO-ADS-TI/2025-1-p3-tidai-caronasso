@@ -216,5 +216,9 @@ main {
         background-color: #13293D;
         border-radius: 20px;
         align-items: center;
+
+        & .profile-action-name {
+            color: white;
+        }
     }
 }

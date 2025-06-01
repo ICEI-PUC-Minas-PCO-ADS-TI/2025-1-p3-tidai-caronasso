@@ -55,4 +55,18 @@ public class Usuario
     [InverseProperty(nameof(CaronaPassageiro.Usuario))]
     public List<CaronaPassageiro> CaronasComoPassageiro { get; set; } = new List<CaronaPassageiro>();
 
+    [InverseProperty(nameof(AvaliacaoUsuario.UsuarioAvaliado))]
+    public List<AvaliacaoUsuario> AvaliacoesRecebidas { get; set; } = new List<AvaliacaoUsuario>();
+
+    [InverseProperty(nameof(AvaliacaoUsuario.UsuarioAvaliador))]
+    public List<AvaliacaoUsuario> AvaliacoesEnviadas { get; set; } = new List<AvaliacaoUsuario>();
+
+    [NotMapped]
+    public float? MediaAvaliacao => AvaliacoesRecebidas.Any() == true ? 
+        (float)Math.Round(AvaliacoesRecebidas.Average(a => a.Nota), 2) :
+        null;
+
+    [NotMapped]
+    public int QuantidadeAvaliacoes => AvaliacoesRecebidas?.Count ?? 0;
+
 }

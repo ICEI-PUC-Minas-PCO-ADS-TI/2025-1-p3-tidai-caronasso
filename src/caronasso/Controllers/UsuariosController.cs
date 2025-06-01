@@ -39,6 +39,7 @@ namespace caronasso.Controllers
             }
 
             var usuario = await _context.Usuarios
+                .Include(u => u.AvaliacoesRecebidas)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
@@ -70,7 +71,7 @@ namespace caronasso.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Nome,Email,Senha,Curso,Endereco,Descricao,Genero,FotoPerfil")] Usuario usuario)
+        public async Task<IActionResult> EditPost(int id, [Bind("Nome,Email,Senha,Curso,Endereco,Descricao,Genero")] Usuario usuario, IFormFile fotoPerfilUpload)
         {
             //if (id != usuario.Id)
             //{
@@ -85,13 +86,48 @@ namespace caronasso.Controllers
                 return Unauthorized();
             }
 
+            if (fotoPerfilUpload != null && fotoPerfilUpload.Length > 0)
+            {
+                string[] allowedExtensions = [".jpg", ".jpeg", ".png"];
+
+                var profilePhotosFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/uploads/profilePhotos");
+
+                var fileExtension = Path.GetExtension(fotoPerfilUpload.FileName);
+
+                if (String.IsNullOrEmpty(fileExtension) || !allowedExtensions.Contains(fileExtension.ToLowerInvariant()))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(fotoPerfilUpload.FileName);
+                var filePath = Path.Combine(profilePhotosFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await fotoPerfilUpload.CopyToAsync(stream);
+                }
+
+                if(!string.IsNullOrEmpty(currentUser.FotoPerfil))
+                {
+                    var oldPhotoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", currentUser.FotoPerfil.TrimStart('/'));
+
+                    if (System.IO.File.Exists(oldPhotoPath))
+                    {
+                        System.IO.File.Delete(oldPhotoPath);
+                    }
+                }
+
+
+                currentUser.FotoPerfil = "/assets/uploads/profilePhotos/" + fileName;
+            }
+           
+
             currentUser.Nome = usuario.Nome;
             currentUser.Email = usuario.Email;
             currentUser.Curso = usuario.Curso;
             currentUser.Endereco = usuario.Endereco;
             currentUser.Descricao = usuario.Descricao;
             currentUser.Genero = usuario.Genero;
-            currentUser.FotoPerfil = usuario.FotoPerfil;
             
             if(!string.IsNullOrEmpty(usuario.Senha))
             {
