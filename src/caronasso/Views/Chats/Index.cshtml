@@ -67,9 +67,14 @@
                         @if(item.Participantes.Count == 2)
                         {
                             var otherPerson = item.Participantes.FirstOrDefault(chatp => chatp.UsuarioId != currentUserId);
+
+                            var profilePhoto = String.IsNullOrEmpty(otherPerson.Usuario.FotoPerfil) ?
+                            Url.Content("~/assets/img/defaultImage.png") :
+                            Url.Content(otherPerson.Usuario.FotoPerfil);
+
                             otherPersonName = otherPerson?.Usuario.Nome;
                             <li class="user-chat-item user" data-chat-id="@item.Id" onclick="startChat('Bryan')">
-                                <img src="~/assets/img/garoto-chat.png" alt="Usuário 1" class="user-avatar">
+                                <img src="@profilePhoto" alt="Usuário foto" class="user-avatar">
                                 <span>@otherPersonName</span>
                             </li>
                         }

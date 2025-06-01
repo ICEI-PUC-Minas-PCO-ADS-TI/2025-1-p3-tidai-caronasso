@@ -48,7 +48,7 @@
         <h1>Confirmação Chat</h1>
         
         <form asp-action="CreateChat" asp-route-destinatarioId="@ViewBag.DestinatarioId">
-            <img width="200px" src="~/assets/img/testimg.png" alt="Imagem Destinatário" />
+            <img class="rounded" width="200px" src="@ViewBag.DestinatarioFotoPerfil" alt="Imagem Destinatário" />
             <h2>@ViewBag.DestinatarioNome</h2>
             <button type="submit" value="CreateChat">Iniciar Chat</button>
         </form>

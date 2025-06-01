@@ -65,6 +65,9 @@ namespace caronasso.Controllers
                 var usuario = await _context.Usuarios.FirstOrDefaultAsync(m => m.Id == idUsuario);
                 ViewBag.DestinatarioNome = usuario.Nome;
                 ViewBag.DestinatarioId = usuario.Id;
+                ViewBag.DestinatarioFotoPerfil = String.IsNullOrEmpty(usuario.FotoPerfil) ?
+                        "~/assets/img/defaultImage.png" :
+                        usuario.FotoPerfil;
             } 
             else
             {
