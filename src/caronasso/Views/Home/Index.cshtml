@@ -21,7 +21,14 @@
         <div class="frase">
             <p class="letraInicio">"Carona Universitária: conecte-se com quem vai na mesma direção. <span class="caronassomeio">Caronasso,</span> sua jornada mais inteligente!"</p>
             <div>
-                <button class="btn btn-secondHome"><a asp-controller="Auth" asp-action="Index">Entrar</a></button>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <button class="btn btn-secondHome"><a asp-controller="Auth" asp-action="Logout">Sair</a></button>
+                }
+                else
+                {
+                    <button class="btn btn-secondHome"><a asp-controller="Auth" asp-action="Index">Entrar</a></button>
+                }
             </div>
         </div>
         <div class="car-image">
