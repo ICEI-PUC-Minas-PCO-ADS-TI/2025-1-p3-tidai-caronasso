@@ -71,7 +71,7 @@ namespace caronasso.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditPost(int id, [Bind("Nome,Email,Senha,Curso,Endereco,Descricao,Genero")] Usuario usuario, IFormFile fotoPerfilUpload)
+        public async Task<IActionResult> EditPost(int id, [Bind("Nome,Email,Senha,Curso,Endereco,Descricao,Genero")] Usuario usuario, IFormFile? fotoPerfilUpload)
         {
             //if (id != usuario.Id)
             //{
