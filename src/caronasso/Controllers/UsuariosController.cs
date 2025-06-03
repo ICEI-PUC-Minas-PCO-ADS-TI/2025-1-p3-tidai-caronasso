@@ -132,6 +132,9 @@ namespace caronasso.Controllers
             if(!string.IsNullOrEmpty(usuario.Senha))
             {
                 currentUser.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+            } else
+            {
+                ModelState.Remove("Senha");
             }
 
             if (ModelState.IsValid)
