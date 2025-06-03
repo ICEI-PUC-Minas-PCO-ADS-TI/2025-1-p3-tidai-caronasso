@@ -164,7 +164,8 @@ namespace caronasso.Controllers
                 {
                     Remetente = m.Remetente.Nome,
                     m.Conteudo,
-                    Horario = m.HorarioEnvio.ToString("HH:mm")
+                    Horario = m.HorarioEnvio.ToString("HH:mm"),
+                    m.RemetenteId
                 })
                 .ToListAsync();
 

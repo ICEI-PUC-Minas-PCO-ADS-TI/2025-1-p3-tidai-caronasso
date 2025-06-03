@@ -39,13 +39,13 @@
                         </form>
                         <a class="btn btn-primary order-0" data-bs-toggle="collapse" href="#@idCollapse" role="button" aria-expanded="false" aria-controls="@idCollapse">Ver Passageiros</a>
                     </div>
+
+                    <div class="collapse mt-4" id="@idCollapse">
                     @foreach (CaronaPassageiro passageiro in item.Passageiros)
                     {
                         var profilePhoto = String.IsNullOrEmpty(passageiro.Usuario.FotoPerfil) ?
                             Url.Content("~/assets/img/defaultImage.png") :
                             Url.Content(passageiro.Usuario.FotoPerfil);
-
-                        <div class="collapse mt-4" id="@idCollapse">
                         <div>
                             <div class="card mb-3">
                                 <div class="row g-0">
@@ -68,8 +68,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                     }
+                </div>
                 </div>
             </div>    
         }

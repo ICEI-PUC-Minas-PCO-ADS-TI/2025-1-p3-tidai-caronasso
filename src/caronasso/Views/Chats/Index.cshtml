@@ -111,7 +111,10 @@
             overflow-y: scroll;
         }
         .chat-message {
-            background-color: darkolivegreen;
+            justify-self: flex-start;
+            /* max-width: 80%; */
+            word-break: break-all;
+            background-color: darkslategrey;
             border-radius: 5px;
             padding: 10px;
             margin-top: 10px;
@@ -122,6 +125,15 @@
 
             & .chat-message-content {
                 color: white;
+            }
+        }
+
+        .own-message {
+            justify-self: flex-end;
+            background-color: darkolivegreen!important;
+
+            & .chat-message-name {
+                color: greenyellow;
             }
         }
     </style>
@@ -148,6 +160,11 @@
                     console.log(msg);
                     const msgElement = document.createElement("div");
                     msgElement.classList.add("chat-message");
+
+                    if(msg.remetenteId == @ViewBag.currentUserId)
+                    {
+                        msgElement.classList.add("own-message");
+                    }
 
                     const nameElement = document.createElement("span");
                     nameElement.classList.add("chat-message-name");
