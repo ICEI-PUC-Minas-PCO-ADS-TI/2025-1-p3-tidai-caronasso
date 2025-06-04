@@ -12,6 +12,7 @@
     <title>Caronas Disponíveis</title>
     <link rel="stylesheet" href="~/assets/css/global.css" />
     <link rel="stylesheet" href="~/assets/css/caronas.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 <body>
     <main class="container" style="flex:1; display:flex; flex-direction:column;">
@@ -42,11 +43,81 @@
 
         <!-- Mapa  -->
         <aside class="map-container" style="flex:1; margin-top:1rem;">
-            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-44.1529%2C-20.0386%2C-43.9529%2C-19.8386&layer=mapnik&marker=-19.9386%2C-44.0529" allowfullscreen loading="lazy"></iframe>
-            <br /><small><a href="https://www.openstreetmap.org/?mlat=-19.9386&mlon=-44.0529#map=12/-19.9386/-44.0529" target="_blank" rel="noopener">Ver mapa ampliado</a></small>
+           <div style="height: 450px" id="map">
+
+           </div>
         </aside>
 
-        <script src="~/assets/js/script.js"></script>
     </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin=""></script>
+
+    <script>
+        const origem = "@Model.Origem";
+        const destino = "@Model.Destino";
+
+        async function addressToCoords(endereco) {
+            const URL = `/Caronas/GetCoords?endereco=${endereco}&format=json`;
+
+            const response = await fetch(URL);
+            const data = await response.json();
+            if(data.length > 0) {
+                return {
+                    lat: parseFloat(data[0].lat),
+                    lon: parseFloat(data[0].lon)
+                };
+            } else {
+                return null;
+            }
+        }
+
+        async function mostrarRota() {
+            let origemCoords = await addressToCoords(origem);
+            let destinoCoords = await addressToCoords(destino);
+
+            if(origemCoords != null && destinoCoords != null) {
+
+                var map = L.map('map').setView([-19.941502, -44.076121], 13);
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
+
+                L.marker([origemCoords.lat, origemCoords.lon], {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 500
+                }).addTo(map).bindPopup("Origem");
+
+                L.marker([destinoCoords.lat, destinoCoords.lon], {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 500
+                }).addTo(map).bindPopup("Destino");
+
+                const routeUrl = `https://routing.openstreetmap.de/routed-car/route/v1/driving/${origemCoords.lon},${origemCoords.lat};${destinoCoords.lon},${destinoCoords.lat}?overview=full&geometries=geojson`;
+                const rota = await fetch(routeUrl);
+                const routeData = await rota.json();
+                console.log(routeData);
+                const coords = routeData.routes[0].geometry.coordinates.map(p => [p[1], p[0]]);
+                const routeDrawing = L.polyline(coords, {color: 'purple'}).addTo(map);
+
+                map.fitBounds(routeDrawing.getBounds());
+
+
+                // Seria bom se fizesse a parte de pegar as coordenadas antes e armazena-las, com o intuito de diminuir o número de requests enviados para a api
+            } else {
+                let map = document.getElementById("map");
+                let h1 = document.createElement('h1');
+                h1.textContent = "Não é possível exibir essa rota";
+                h1.style.color = "red";
+                map.appendChild(h1);
+            }
+        }
+
+        mostrarRota();
+
+    </script>
 </body>
 </html>

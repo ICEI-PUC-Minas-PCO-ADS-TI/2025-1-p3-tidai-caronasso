@@ -315,5 +315,20 @@ namespace caronasso.Controllers
         {
             return _context.Caronas.Any(e => e.Id == id);
         }
+
+        public async Task<IActionResult> GetCoords(string endereco)
+        {
+            using var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("caronasso-app");
+
+            var encodedAddress = Uri.EscapeDataString(endereco);
+            var apiUrl = $"https://nominatim.openstreetmap.org/search?q={encodedAddress}&format=jsonv2";
+
+            var response = await httpClient.GetAsync(apiUrl);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return Content(content, "application/json");
+        }
     }
 }

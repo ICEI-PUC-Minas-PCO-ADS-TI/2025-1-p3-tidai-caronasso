@@ -28,6 +28,14 @@ public class AuthController : Controller
     {
         ModelState.Remove("Login");
 
+        string emailPermitido = "@sga.pucminas.br";
+
+        if(!model.Cadastro.Email.ToLower().EndsWith(emailPermitido))
+        {
+            ModelState.AddModelError("Cadastro.Email", "Somente e-mails da PUC são aceitos.");
+            return View("Index", model);
+        }
+
         if (ModelState.IsValid) 
         {
             Usuario? usuarioExistente = await _context.Usuarios.Where(c => c.Email == model.Cadastro.Email).FirstOrDefaultAsync();

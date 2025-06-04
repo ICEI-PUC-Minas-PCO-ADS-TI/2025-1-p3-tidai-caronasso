@@ -48,6 +48,9 @@
             </ul>
         </div>
         <div class="chat-box" id="chatBox">
+            <div style="display: flex; justify-content: center;">
+                <a asp-controller="Usuarios" asp-action="Details" asp-route-id="" id="userChatAtivo" style="text-align: center; color: white; cursor: pointer"></a>
+            </div>
             <div class="messages" id="messages">
                 <!-- Aqui vão as mensagens! -->
             </div>
@@ -107,6 +110,8 @@
                 const messages = await response.json();
 
                 messagesDiv.innerHTML = "";
+
+                document.getElementById("userChatAtivo").textContent = chatBtn.textContent;
 
                 messages.forEach(msg => {
                     console.log(msg);
