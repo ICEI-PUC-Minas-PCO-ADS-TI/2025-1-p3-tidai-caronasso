@@ -136,6 +136,11 @@ namespace caronasso.Controllers
         {
             var currentUserId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
+            if(String.IsNullOrEmpty(message.Conteudo))
+            {
+                return base.BadRequest();
+            }
+
             // PRECISA CRIAR UMA VERIFICAÇÃO PARA VER SE O USUÁRIO QUE ESTÁ ENVIANDO A MENSAGEM ESTÁ NO CHAT
             Mensagem msgObj = new Mensagem
             {

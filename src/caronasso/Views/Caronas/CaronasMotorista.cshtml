@@ -23,6 +23,7 @@
         @foreach (var item in Model)
         {
             var idCollapse = "carona-" + item.Id.ToString("N");
+            idCollapse.Replace(',', '.');
 
             <div class="card carona mb-5">
                 <div class="card-header">
