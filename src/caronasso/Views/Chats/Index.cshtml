@@ -5,42 +5,6 @@
     var currentUserId = ViewBag.currentUserId;
 }
 
-@* <h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Conteudo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HorarioEnvio)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Conteudo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HorarioEnvio)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table> *@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -81,18 +45,6 @@
 
                     }
                 }
-                @* <li class="user" onclick="startChat('Bryan')">
-                    <img src="~/assets/img/garoto-chat.png" alt="Usuário 1" class="user-avatar">
-                    <span>Bryan</span>
-                </li>
-                <li class="user" onclick="startChat('Philipi')">
-                    <img src="~/assets/img/garoto-chat.png" alt="Usuário 2" class="user-avatar">
-                    <span>Philipi</span>
-                </li>
-                <li class="user" onclick="startChat('João')">
-                    <img src="~/assets/img/garoto-chat.png" alt="Usuário 3" class="user-avatar">
-                    <span>João</span>
-                </li> *@
             </ul>
         </div>
         <div class="chat-box" id="chatBox">

@@ -4,60 +4,6 @@
     ViewData["Title"] = "Index";
 }
 
-@* <h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Origem)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Destino)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HorarioSaida)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.VagasDisponiveis)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Motorista)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Origem)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Destino)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HorarioSaida)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VagasDisponiveis)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Motorista.Email)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table> *@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -79,9 +25,11 @@
         <div class="sidebar">
             @foreach (var item in Model)
             {
+                string fotoUser = item.Motorista.FotoPerfil ?? "~/assets/img/defaultImage.png";
+
                 <div class="carona" style="background-color: lightgreen">
                     <div class="passenger-info">
-                        <img src="~/assets/img/garoto.png" alt="Christian Sena" class="driver-img">
+                        <img src="@fotoUser" alt="Foto Motorista" class="driver-img">
                         <a asp-controller="Usuarios" asp-action="Details" asp-route-id="@item.MotoristaId" class="driver-name">@Html.DisplayFor(modelItem => item.Motorista.Nome)</a>
                     </div>
                     <div class="carona-details">

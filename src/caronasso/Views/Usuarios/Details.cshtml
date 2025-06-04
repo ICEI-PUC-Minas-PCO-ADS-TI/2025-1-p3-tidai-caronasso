@@ -4,85 +4,6 @@
     ViewData["Title"] = "Details";
 }
 
-@* <h1>Details</h1>
-
-<div>
-    <h4>Usuario</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Senha)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Senha)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Curso)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Curso)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Endereco)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Endereco)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descricao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Descricao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genero)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Genero)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Disponivel)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Disponivel)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataCadastro)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataCadastro)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FotoPerfil)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FotoPerfil)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Perfil)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Perfil)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div> *@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,7 +29,7 @@
                 {
                     <p class="profile-type" style="color: @Html.Raw((Model.Perfil.ToString() == "Admin") ? "red" : "blue")">@Html.DisplayFor(model => model.Perfil)</p>
                 }
-                <p></p>
+                <p style="color: darkblue; font-size: smaller">@Html.DisplayFor(model => model.Curso)</p>
                 <p class="profile-rating">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z" /></svg>
                     <span class="rating">@(Model.MediaAvaliacao != null ? Html.DisplayFor(model => model.MediaAvaliacao) : "Não avaliado")</span>

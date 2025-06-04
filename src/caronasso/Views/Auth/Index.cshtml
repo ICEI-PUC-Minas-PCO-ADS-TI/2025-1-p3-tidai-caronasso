@@ -51,16 +51,6 @@
 
                     <label class="label-input" for="">
                         <i class="fa-thin fa-graduation-cap"></i>
-                        @* <input asp-for="Cadastro.Curso" type="text" list="my-options" placeholder="Selecione seu Curso"> *@
-                        @* <datalist asp-items="Html.GetEnumSelectList<caronasso.Models.Enums.Curso>()" id="my-options">
-                            <option value="Administração" />
-                            <option value="Biomedicina" />
-                            <option value="Ciências Contábeis" />
-                            <option value="Direito" />
-                            <option value="Medicina" />
-                            <option value="Sistemas de Informação" />
-                            <option value="Tecnologia em Análise e Desenvolv. de Sistemas" />
-                        </datalist> *@
                         <select asp-items="Html.GetEnumSelectList<caronasso.Models.Enums.Curso>()" asp-for="Cadastro.Curso"></select>
                         <span asp-validation-for="Cadastro.Curso" class="text-danger"></span>
                     </label>
