@@ -112,9 +112,9 @@ Layout considerado simples demais. Troca de senha pareceu pouco segura (não hou
 Os resultados indicam **100 % de sucesso** em todos os cenários testados, com níveis de satisfação variando de **3 (regular) a 5 (excelente)**.  
 - **Pontos fortes:** Cadastro simples; avaliação pós‑viagem rápida; conceito da plataforma bem‑aceito.  
 - **Pontos a melhorar:**  
-  1. Implementar **chat em tempo real** para eliminar necessidade de atualização manual.  
-  2. Ajustar redirecionamento após cadastrar carona e tornar o fluxo de motorista mais coeso.  
-  3. Oferecer filtros/sugestões de rotas na busca para passageiros indecisos.  
-  4. Reforçar segurança e clareza na alteração de senha; repensar layout da página de perfil.  
+  1 Implementar **chat em tempo real** para eliminar necessidade de atualização manual.  
+  2 Ajustar redirecionamento após cadastrar carona e tornar o fluxo de motorista mais coeso.  
+  3 Oferecer filtros/sugestões de rotas na busca para passageiros indecisos.  
+  4 Reforçar segurança e clareza na alteração de senha; repensar layout da página de perfil.  
 
 Apesar de tempos médios maiores que os do especialista (natural devido à familiaridade), a diferença ainda está dentro de limites aceitáveis para sistemas sem treinamento prévio. As sugestões acima visam reduzir essa lacuna e elevar a satisfação geral.
