@@ -75,6 +75,7 @@
 
 
 Ferramentas Utilizadas:
+
 Navegador Google Chrome
 
 HTML, CSS, JavaScript (Front-End puro)
