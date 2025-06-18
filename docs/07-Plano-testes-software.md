@@ -22,7 +22,7 @@
 |               Objetivo do teste              |                                                          Verificar se o motorista consegue cadastrar uma nova viagem.                                                         |
 |                    Passos                    | - Fazer login como motorista <br> - Acessar a página de "Cadastrar Viagem" <br> - Preencher os campos: origem, destino, número de assentos, horário <br> - Clicar em "Salvar" |
 |               Critério de êxito              |                                                              - Viagem aparece na listagem de caronas disponíveis.                                                             |
-| Responsável pela elaboração do caso de teste |                                                                          Nome do integrante da equipe                                                                         |
+| Responsável pela elaboração do caso de teste |                                                                          Phillipi Garcia                                                                         |
 
 |               **Caso de teste**              |                                      **CT-004 – Buscar Caronas Disponíveis (Passageiro)**                                     |
 | :------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: |
@@ -30,7 +30,7 @@
 |               Objetivo do teste              |                                Validar se o passageiro consegue pesquisar caronas disponíveis.                                |
 |                    Passos                    | - Acessar a página "Consultar Caronas" <br> - Inserir um termo de busca (ex: nome da rua ou bairro) <br> - Clicar em "Buscar" |
 |               Critério de êxito              |                                     - Lista de caronas compatíveis com a busca é exibida.                                     |
-| Responsável pela elaboração do caso de teste |                                                  Nome do integrante da equipe                                                 |
+| Responsável pela elaboração do caso de teste |                                                  Phillipi Garcia                                                 |
 
 |               **Caso de teste**              |                       **CT-005 – Confirmar Participação em uma Carona**                       |
 | :------------------------------------------: | :-------------------------------------------------------------------------------------------: |
@@ -38,7 +38,7 @@
 |               Objetivo do teste              |               Validar se o passageiro consegue confirmar presença em uma carona.              |
 |                    Passos                    | - Buscar por caronas <br> - Localizar uma carona desejada <br> - Clicar em "Confirmar Carona" |
 |               Critério de êxito              |           - A carona é confirmada e o passageiro recebe uma mensagem de confirmação.          |
-| Responsável pela elaboração do caso de teste |                                  Nome do integrante da equipe                                 |
+| Responsável pela elaboração do caso de teste |                                  Phillipi Garcia                                 |
 
 |               **Caso de teste**              |                             **CT-006 – Cancelar Carona (Passageiro)**                             |
 | :------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
@@ -46,7 +46,7 @@
 |               Objetivo do teste              |                  Testar se o passageiro consegue cancelar sua carona com sucesso.                 |
 |                    Passos                    | - Acessar "Minhas Caronas" <br> - Selecionar a carona agendada <br> - Clicar em "Cancelar Carona" |
 |               Critério de êxito              |                 - A carona é cancelada e o sistema exibe uma mensagem de sucesso.                 |
-| Responsável pela elaboração do caso de teste |                                    Nome do integrante da equipe                                   |
+| Responsável pela elaboração do caso de teste |                                    Phillipi Garcia                                   |
 
 |               **Caso de teste**              |                                             **CT-007 – Visualizar Mapa na Busca de Caronas**                                             |
 | :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: |
@@ -54,7 +54,7 @@
 |               Objetivo do teste              |                                  Garantir que o mapa é exibido corretamente durante a busca de caronas.                                  |
 |                    Passos                    | - Acessar a página "Consultar Caronas" <br> - Realizar uma busca <br> - Verificar o carregamento do mapa com os pontos de origem/destino |
 |               Critério de êxito              |                                      - O mapa aparece corretamente com os marcadores de localização.                                     |
-| Responsável pela elaboração do caso de teste |                                                       Nome do integrante da equipe                                                       |
+| Responsável pela elaboração do caso de teste |                                                       Phillipi Garcia                                                       |
 
 |               **Caso de teste**              |                                                                                                **CT-008 – Responsividade (Mobile)**                                                                                                |
 | :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -62,7 +62,7 @@
 |               Objetivo do teste              |                                                                            Validar o layout e o funcionamento do sistema em diferentes tamanhos de tela.                                                                           |
 |                    Passos                    | - Acessar o site em um dispositivo móvel ou via modo de inspeção responsiva do navegador <br> - Navegar pelas telas principais: Login, Cadastro, Consultar Caronas <br> - Testar o botão de menu, campos de busca e botões de ação |
 |               Critério de êxito              |                                                                                - Todos os componentes se ajustam corretamente sem quebra de layout.                                                                                |
-| Responsável pela elaboração do caso de teste |                                                                                                    Nome do integrante da equipe                                                                                                    |
+| Responsável pela elaboração do caso de teste |                                                                                                    Phillipi Garcia                                                                                                    |
 
 |               **Caso de teste**              |                                                   **CT-009 – Avaliar Motorista**                                                   |
 | :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
@@ -70,7 +70,7 @@
 |               Objetivo do teste              |                               Validar se o passageiro consegue deixar uma avaliação para o motorista.                              |
 |                    Passos                    | - Acessar o histórico de viagens <br> - Escolher uma carona finalizada <br> - Preencher campo de avaliação <br> - Enviar avaliação |
 |               Critério de êxito              |                                   - Avaliação salva com sucesso e aparece no perfil do motorista.                                  |
-| Responsável pela elaboração do caso de teste |                                                    Nome do integrante da equipe                                                    |
+| Responsável pela elaboração do caso de teste |                                                    Phillipi Garcia                                                    |
 
 
 
