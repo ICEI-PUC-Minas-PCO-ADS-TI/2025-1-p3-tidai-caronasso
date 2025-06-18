@@ -76,7 +76,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-003| Permitir que o usuário cadastre uma viagem com informações de origem e destino  | ALTA |
 |RF-004| Permitir que o usuário pesquise viagens disponíveis com base em origem ou destino	 | ALTA | 
 |RF-005| Permitir que o usuário envie mensagens para o motorista ou passageiro sobre a viagem   | ALTA |
-|RF-006| Permitir que o usuário se cadastre e crie um perfil com informações pessoais, como nome, telefone e foto  | ALTA |
+|RF-006| Permitir que o usuário se cadastre e crie um perfil com informações pessoais, como nome e curso  | ALTA |
 |RF-007| Permitir que o motorista defina o número de assentos disponíveis para a viagem | MÉDIA | 
 |RF-008| Exibir a avaliação do motorista e do passageiro com base em avaliações anteriores   | ALTA |
 
