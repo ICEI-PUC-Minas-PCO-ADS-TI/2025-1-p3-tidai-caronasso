@@ -83,6 +83,15 @@
 |               Critério de êxito              |                            - A viagem é removida da lista de caronas disponíveis e os passageiros previamente confirmados recebem uma notificação de cancelamento.                            |
 | Responsável pela elaboração do caso de teste |                                                                                  Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                                                 |
 
+|               **Caso de teste**              |                                                                                               **CT-011 – Excluir Passageiro da Carona**                                                                                              |
+| :------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                                                                    RF-002 – Permitir que o motorista remova um passageiro de uma carona antes do início da viagem.                                                                   |
+|               Objetivo do teste              |                                                                     Verificar se o motorista consegue excluir um passageiro da lista de uma carona já confirmada.                                                                    |
+|                    Passos                    | - Fazer login como motorista <br> - Ir até "Minhas Viagens" <br> - Selecionar a viagem desejada <br> - Acessar a lista de passageiros <br> - Clicar em "Remover" ao lado do passageiro que deseja excluir <br> - Confirmar a remoção |
+|               Critério de êxito              |                                                                          - O passageiro é removido da carona e o sistema exibe uma mensagem de confirmação.                                                                          |
+| Responsável pela elaboração do caso de teste |                                                                                                     Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                                                                     |
+
+
 
 
 Ferramentas Utilizadas:
