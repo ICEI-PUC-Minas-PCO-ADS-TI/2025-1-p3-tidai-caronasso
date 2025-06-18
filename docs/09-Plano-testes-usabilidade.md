@@ -1,42 +1,114 @@
 # Plano de testes de usabilidade
+Plano de Usabilidade – Plataforma Caronasso
 
-<span style="color:red">Pré-requisitos: <a href="04-Projeto-interface.md"> Projeto de interface</a></span>, <a href="07-Plano-testes-software.md"> Plano de testes de software</a>
+## 1. Objetivo
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (ou cenários) em função dos requisitos levantados/implementados, os critérios que serão utilizados para a seleção dos participantes, os procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? O método será observação direta, medição ou avaliação?), os dados a serem coletados (quantidade de cliques, número de erros, tempo, etc.), a ordem de execução das tarefas e das etapas da sessão de teste, os recursos demandados, as métricas coletadas, entre outros.
+Avaliar a facilidade de uso, eficiência e satisfação de usuários ao interagir com a plataforma **Caronasso**, garantindo que suas funcionalidades principais sejam intuitivas e atendam às necessidades dos estudantes universitários.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos. No entanto, atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível que permita identificar o voluntário deverá ser apresentado.
+---
 
-> Exemplo:
+## 2. Perfil dos Usuários
 
-O objetivo doPlano de testes de usabilidade é obter informações quanto à expectativa dos usuários em relação à funcionalidade da aplicação de forma geral.
+- **Público-alvo**: Estudantes universitários (18 a 35 anos)  
+- **Conhecimento técnico**: Básico/intermediário em navegação web  
+- **Dispositivo**: Notebook com navegador Google Chrome (preferencial)  
+- **Frequência esperada de uso**: 2 a 5 vezes por semana  
 
-Para tanto, foram elaborados quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
+---
 
-Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
+## 3. Metas de Usabilidade
 
-Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
+| Critério     | Meta                                                  |
+|--------------|-------------------------------------------------------|
+| Eficiência   | Completar as tarefas principais em até 2 minutos cada |
+| Eficácia     | ≥ 80 % de tarefas concluídas com sucesso              |
+| Satisfação   | Nota média ≥ 3,5 (em escala de 1 a 5)                  |
+| Aprendizado  | Interface compreendida sem treinamento formal         |
+| Erro         | Nº médio de erros por tarefa ≤ 1                      |
 
-Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
+---
 
-1. Péssimo; 
-2. Ruim; 
-3. Regular; 
-4. Bom; 
-5. Ótimo.
+## 4. Tarefas Avaliadas
 
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
+| Tarefa                   | Objetivo                                                             |
+|--------------------------|----------------------------------------------------------------------|
+| T1 – Criar conta         | Simular novo usuário completando o cadastro                         |
+| T2 – Oferecer carona     | Preencher corretamente todos os campos e salvar uma carona          |
+| T3 – Buscar e reservar   | Pesquisar, visualizar e confirmar vaga em uma carona existente       |
+| T4 – Usar chat           | Abrir conversa com motorista e enviar uma mensagem                   |
+| T5 – Avaliar motorista   | Dar nota e comentário após finalização de carona                     |
+| T6 – Editar perfil       | Alterar as informações do perfil criado                              |
 
-Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
+---
 
-> Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico, você deve detalhar quais funcionalidades foram avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+## 5. Metodologia
 
-## Cenários de teste de usabilidade
+- **Técnica**: Avaliação formativa com usuários reais  
+- **Formato**: Preferencialmente presencial; pode ser remoto via videochamada  
+- **Papéis**:
+  - *Moderador*: conduz o teste e fornece instruções  
+  - *Testador/Observador*: registra métricas e observações  
 
-| Nº do cenário | Descrição do cenário |
-|---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iPhone. Encontre no site um iPhone e veja detalhes de localização e contato da loja que o está anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphones nessa faixa de preço. |
+---
 
+## 6. Procedimento
+
+1. Apresentação do objetivo e consentimento verbal  
+2. Execução das 6 tarefas com tempo cronometrado  
+3. Registro de erros, cliques e nível de satisfação por tarefa  
+4. Questionário final (escala de 1 a 5 de satisfação geral)  
+5. Agradecimento e debriefing  
+
+---
+
+## 7. Recursos Necessários
+
+- Sistema **Caronasso** funcional no navegador  
+- Contas fictícias ou reais para testes  
+- Cronômetro ou celular  
+- Planilha ou formulário de coleta de dados  
+- Ambiente calmo para aplicação do teste  
+
+---
+
+## 8. Participantes
+
+- **Quantidade**: entre 4 e 6 participantes  
+- **Recrutamento**: alunos convidados pelos desenvolvedores  
+- **Privacidade**: não serão coletados dados sensíveis (cumprimento da **LGPD**)  
+
+---
+
+## 9. Critérios de Sucesso
+
+| Métrica              | Limite mínimo                                |
+|----------------------|----------------------------------------------|
+| Sucesso de tarefa    | ≥ 80%                                         |
+| Tempo por tarefa     | ≤ 2x o tempo de um usuário experiente         |
+| Satisfação média     | ≥ 3,5 de 5                                    |
+| Erros críticos       | ≤ 1 por tarefa                                |
+
+---
+
+## 10. Riscos e Mitigações
+
+| Risco                  | Ação                                            |
+|------------------------|-------------------------------------------------|
+| Participante abandona  | Ter reserva de voluntários                     |
+| Falha no sistema       | Executar backup local com dados fictícios      |
+| Ambiente barulhento    | Aplicar testes em laboratório ou remoto c/ fones |
+
+---
+
+## 11. Análise de Resultados (após os testes)
+
+- Calcular **médias de tempo, sucesso e satisfação**  
+- Identificar **padrões de erro**  
+- Relatar **principais problemas de usabilidade**  
+- Gerar **recomendações práticas** para a equipe de desenvolvimento  
+
+---
+# Resultados dos testes de usabilidade
 
 > **Links úteis**:
 > - [Teste de usabilidade: o que é e como fazer passo a passo](https://neilpatel.com/br/blog/teste-de-usabilidade/)
