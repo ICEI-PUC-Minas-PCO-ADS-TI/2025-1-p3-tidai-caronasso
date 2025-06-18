@@ -67,6 +67,23 @@
 | Responsável pela elaboração do caso de teste |                                                    Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                    |
 
 
+|               **Caso de teste**              |                                                                                                                     **CT-09 – Chat entre Motorista e Passageiro**                                                                                                                     |
+| :------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                                                                                        RF-005 – O sistema deve permitir que usuários (motoristas e passageiros) enviem mensagens sobre a viagem.                                                                                       |
+|               Objetivo do teste              |                                                                                              Verificar se motorista e passageiro conseguem se comunicar antes da viagem via chat interno.                                                                                              |
+|                    Passos                    | - Fazer login no sistema <br> - Acessar a lista de caronas disponíveis <br> - Selecionar uma carona desejada <br> - Clicar na opção "Chat com o motorista" ou "Chat com o passageiro" <br> - Escrever uma mensagem de teste <br> - Verificar se a mensagem aparece para o destinatário |
+|               Critério de êxito              |                                                                                               - A mensagem é enviada, recebida e exibida corretamente para ambos os usuários envolvidos.                                                                                               |
+| Responsável pela elaboração do caso de teste |                                                                                                                              Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                                                                                              |
+
+|               **Caso de teste**              |                                                                       **CT-012 – Cancelamento de Viagem pelo Motorista**                                                                      |
+| :------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                                                         RF-002 – Permitir que o motorista cancele a viagem antes do início da carona.                                                         |
+|               Objetivo do teste              |                                                           Garantir que o motorista consiga cancelar uma viagem criada anteriormente.                                                          |
+|                    Passos                    | - Fazer login como motorista <br> - Acessar a área "Minhas Viagens" <br> - Selecionar a viagem que deseja cancelar <br> - Clicar em "Cancelar Viagem" <br> - Confirmar a ação de cancelamento |
+|               Critério de êxito              |                            - A viagem é removida da lista de caronas disponíveis e os passageiros previamente confirmados recebem uma notificação de cancelamento.                            |
+| Responsável pela elaboração do caso de teste |                                                                                  Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                                                 |
+
+
 
 Ferramentas Utilizadas:
 
