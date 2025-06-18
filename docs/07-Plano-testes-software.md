@@ -56,15 +56,9 @@
 |               Critério de êxito              |                                      - O mapa aparece corretamente com os marcadores de localização.                                     |
 | Responsável pela elaboração do caso de teste |                                                       Phillipi Garcia                                                       |
 
-|               **Caso de teste**              |                                                                                                **CT-008 – Responsividade (Mobile)**                                                                                                |
-| :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|              Requisito associado             |                                                                           RNF-001 – O sistema deve ser responsivo e funcionar bem em dispositivos móveis.                                                                          |
-|               Objetivo do teste              |                                                                            Validar o layout e o funcionamento do sistema em diferentes tamanhos de tela.                                                                           |
-|                    Passos                    | - Acessar o site em um dispositivo móvel ou via modo de inspeção responsiva do navegador <br> - Navegar pelas telas principais: Login, Cadastro, Consultar Caronas <br> - Testar o botão de menu, campos de busca e botões de ação |
-|               Critério de êxito              |                                                                                - Todos os componentes se ajustam corretamente sem quebra de layout.                                                                                |
-| Responsável pela elaboração do caso de teste |                                                                                                    Phillipi Garcia                                                                                                    |
 
-|               **Caso de teste**              |                                                   **CT-009 – Avaliar Motorista**                                                   |
+
+|               **Caso de teste**              |                                                   **CT-008 – Avaliar Motorista**                                                   |
 | :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
 |              Requisito associado             |                        RF-008 – O sistema deve permitir que passageiros avaliem motoristas após uma viagem.                        |
 |               Objetivo do teste              |                               Validar se o passageiro consegue deixar uma avaliação para o motorista.                              |
