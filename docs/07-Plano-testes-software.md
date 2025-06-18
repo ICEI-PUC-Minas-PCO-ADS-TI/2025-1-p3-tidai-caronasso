@@ -1,37 +1,85 @@
 # Plano de testes de software
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>, <a href="04-Projeto-interface.md"> Projeto de interface</a>
+|               **Caso de teste**              |                                                                        **CT-001 – Cadastro de Usuário**                                                                       |
+| :------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |               RF-001 e RF-006 – O sistema deve permitir o cadastro de usuários com e-mail institucional e permitir criação de perfil com nome, telefone e foto.               |
+|               Objetivo do teste              |                                   Verificar se o usuário consegue criar uma conta utilizando o e-mail institucional e completar seu perfil.                                   |
+|                    Passos                    | - Acessar o site <br> - Ir para a página de cadastro <br> - Preencher os campos obrigatórios (nome, telefone, e-mail institucional, foto, senha) <br> - Clicar em "Registrar" |
+|               Critério de êxito              |                                             - O sistema cria a conta com sucesso e o usuário é redirecionado para a tela de login.                                            |
+| Responsável pela elaboração do caso de teste |                                                                          Phillipi Garcia                                                                         |
 
-O plano de testes de software é gerado a partir da especificação do sistema e consiste em casos de teste que deverão ser executados quando a implementação estiver parcial ou totalmente pronta. Apresente os cenários de teste utilizados na realização dos testes da sua aplicação. Escolha cenários de teste que demonstrem os requisitos sendo satisfeitos.
+|               **Caso de teste**              |                                        **CT-002 – Login de Usuário**                                       |
+| :------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |    RF-001 – O sistema deve permitir que o usuário realize login utilizando e-mail institucional e senha.   |
+|               Objetivo do teste              |                          Verificar se o usuário consegue fazer login na aplicação.                         |
+|                    Passos                    | - Acessar o site <br> - Clicar em "Entrar" <br> - Informar e-mail e senha válidos <br> - Clicar em "Login" |
+|               Critério de êxito              |                                 - O usuário acessa a sua conta com sucesso.                                |
+| Responsável pela elaboração do caso de teste |                                       Phillipi Garcia                                       |
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico, o grupo deve detalhar quais funcionalidades foram avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+|               **Caso de teste**              |                                                                 **CT-003 – Cadastrar Nova Viagem (Motorista)**                                                                |
+| :------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                                 RF-003 – Permitir que o motorista cadastre uma viagem com informações de origem, destino e número de assentos.                                |
+|               Objetivo do teste              |                                                          Verificar se o motorista consegue cadastrar uma nova viagem.                                                         |
+|                    Passos                    | - Fazer login como motorista <br> - Acessar a página de "Cadastrar Viagem" <br> - Preencher os campos: origem, destino, número de assentos, horário <br> - Clicar em "Salvar" |
+|               Critério de êxito              |                                                              - Viagem aparece na listagem de caronas disponíveis.                                                             |
+| Responsável pela elaboração do caso de teste |                                                                          Nome do integrante da equipe                                                                         |
 
-Não deixe de enumerar os casos de teste de forma sequencial e garantir que o(s) requisito(s) associado(s) a cada um deles esteja(m) correto(s) — de acordo com o que foi definido na <a href="02-Especificacao.md">Especificação do projeto</a>.
+|               **Caso de teste**              |                                      **CT-004 – Buscar Caronas Disponíveis (Passageiro)**                                     |
+| :------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |               RF-004 – O sistema deve permitir que o usuário pesquise caronas disponíveis por origem ou destino.              |
+|               Objetivo do teste              |                                Validar se o passageiro consegue pesquisar caronas disponíveis.                                |
+|                    Passos                    | - Acessar a página "Consultar Caronas" <br> - Inserir um termo de busca (ex: nome da rua ou bairro) <br> - Clicar em "Buscar" |
+|               Critério de êxito              |                                     - Lista de caronas compatíveis com a busca é exibida.                                     |
+| Responsável pela elaboração do caso de teste |                                                  Nome do integrante da equipe                                                 |
 
-Por exemplo:
+|               **Caso de teste**              |                       **CT-005 – Confirmar Participação em uma Carona**                       |
+| :------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+|              Requisito associado             |     RF-008 – O sistema deve permitir que o passageiro confirme sua presença em uma carona.    |
+|               Objetivo do teste              |               Validar se o passageiro consegue confirmar presença em uma carona.              |
+|                    Passos                    | - Buscar por caronas <br> - Localizar uma carona desejada <br> - Clicar em "Confirmar Carona" |
+|               Critério de êxito              |           - A carona é confirmada e o passageiro recebe uma mensagem de confirmação.          |
+| Responsável pela elaboração do caso de teste |                                  Nome do integrante da equipe                                 |
 
-| **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
-|:---: |:---: |
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+|               **Caso de teste**              |                             **CT-006 – Cancelar Carona (Passageiro)**                             |
+| :------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+|              Requisito associado             |          RF-002 – Permitir que o passageiro cancele sua carona antes do início da viagem.         |
+|               Objetivo do teste              |                  Testar se o passageiro consegue cancelar sua carona com sucesso.                 |
+|                    Passos                    | - Acessar "Minhas Caronas" <br> - Selecionar a carona agendada <br> - Clicar em "Cancelar Carona" |
+|               Critério de êxito              |                 - A carona é cancelada e o sistema exibe uma mensagem de sucesso.                 |
+| Responsável pela elaboração do caso de teste |                                    Nome do integrante da equipe                                   |
 
-<br>
+|               **Caso de teste**              |                                             **CT-007 – Visualizar Mapa na Busca de Caronas**                                             |
+| :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                   RF-004 + RNF-001 – O sistema deve exibir o mapa de trajetos na consulta de caronas e ser responsivo.                   |
+|               Objetivo do teste              |                                  Garantir que o mapa é exibido corretamente durante a busca de caronas.                                  |
+|                    Passos                    | - Acessar a página "Consultar Caronas" <br> - Realizar uma busca <br> - Verificar o carregamento do mapa com os pontos de origem/destino |
+|               Critério de êxito              |                                      - O mapa aparece corretamente com os marcadores de localização.                                     |
+| Responsável pela elaboração do caso de teste |                                                       Nome do integrante da equipe                                                       |
 
-| **Caso de teste**  | **CT-002 – Efetuar login**  |
-|:---: |:---: |
-| Requisito associado | RF-00Y - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do teste | Verificar se o usuário consegue realizar login. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
-| Critério de êxito | - O login foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+|               **Caso de teste**              |                                                                                                **CT-008 – Responsividade (Mobile)**                                                                                                |
+| :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                                                                           RNF-001 – O sistema deve ser responsivo e funcionar bem em dispositivos móveis.                                                                          |
+|               Objetivo do teste              |                                                                            Validar o layout e o funcionamento do sistema em diferentes tamanhos de tela.                                                                           |
+|                    Passos                    | - Acessar o site em um dispositivo móvel ou via modo de inspeção responsiva do navegador <br> - Navegar pelas telas principais: Login, Cadastro, Consultar Caronas <br> - Testar o botão de menu, campos de busca e botões de ação |
+|               Critério de êxito              |                                                                                - Todos os componentes se ajustam corretamente sem quebra de layout.                                                                                |
+| Responsável pela elaboração do caso de teste |                                                                                                    Nome do integrante da equipe                                                                                                    |
+
+|               **Caso de teste**              |                                                   **CT-009 – Avaliar Motorista**                                                   |
+| :------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                        RF-008 – O sistema deve permitir que passageiros avaliem motoristas após uma viagem.                        |
+|               Objetivo do teste              |                               Validar se o passageiro consegue deixar uma avaliação para o motorista.                              |
+|                    Passos                    | - Acessar o histórico de viagens <br> - Escolher uma carona finalizada <br> - Preencher campo de avaliação <br> - Enviar avaliação |
+|               Critério de êxito              |                                   - Avaliação salva com sucesso e aparece no perfil do motorista.                                  |
+| Responsável pela elaboração do caso de teste |                                                    Nome do integrante da equipe                                                    |
 
 
-## Ferramentas de testes (opcional)
 
-Comente sobre as ferramentas de testes utilizadas.
+Ferramentas Utilizadas:
+Navegador Google Chrome
+
+HTML, CSS, JavaScript (Front-End puro)
+
+API OpenStreetMap (para renderização dos mapas)
  
 > **Links úteis**:
 > - [IBM - criação e geração de planos de teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
