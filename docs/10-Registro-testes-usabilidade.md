@@ -1,48 +1,120 @@
-# Registro de testes de usabilidade
+# Registro de Testes de Usabilidade  
+**Pré‑requisitos:** Projeto de interface • Plano de testes de usabilidade
 
-<span style="color:red">Pré-requisitos: <a href="04-Projeto-interface.md"> Projeto de interface</a></span>, <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a>
+Após a execução dos testes, foi gerado o presente registro contendo as evidências e os relatos dos **três participantes** (Usuário 1, Usuário 2, Usuário 3), de acordo com o Plano de Usabilidade definido para a plataforma **Caronasso**.
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O registro de testes de usabilidade é um relatório que contém as evidências dos testes e os relatos dos usuários participantes, baseado no <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a> desenvolvido para os casos de uso desta etapa.
+---
 
-Cenário 1: Você é uma pessoa que deseja comprar um iPhone. Encontre no site um iPhone e veja detalhes de localização e contato da loja que o está anunciando.
+## Cenário 1  
+**Situação:** Você é um aluno novo e deseja criar sua conta na plataforma para começar a oferecer e buscar caronas.  
+**Objetivo:** Concluir o cadastro usando o e‑mail institucional e realizar login.
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27,87 segundos                  |
-| 2       | SIM             | 5                    | 17,11 segundos                  |
-| 3       | SIM             | 5                    | 39,09 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8,66 segundos |
+| Usuário | Taxa de sucesso | Satisfação subjetiva (1–5) | Tempo para conclusão |
+|---------|-----------------|----------------------------|----------------------|
+| 1 | SIM | 5 | 02 min 08 s |
+| 2 | SIM | 5 | 01 min 55 s |
+| 3 | SIM | 5 | 02 min 22 s |
+| **Média** | **100 %** | **5,0** | **02 min 08 s** |
+| **Especialista** | SIM | 5 | 00 min 37 s |
 
+**Comentários dos usuários:**  
+Cadastro considerado seguro e direto; exigência do e‑mail institucional foi elogiada. Não houve conflitos no fluxo de criação de conta nem no login.
 
-Comentários dos usuários: Achei o site muito bom e intuitivo. Não tive dificuldades e acho que ficou bem intuitivo.
+---
 
+## Cenário 2  
+**Situação:** Você é motorista e quer oferecer uma carona de **BH → Contagem** amanhã às 8 h, com 3 assentos.  
+**Objetivo:** Cadastrar a rota e verificar se ela aparece na listagem de caronas ofertadas.
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphones nessa faixa de preço.
+| Usuário | Taxa de sucesso | Satisfação subjetiva (1–5) | Tempo para conclusão |
+|---------|-----------------|----------------------------|----------------------|
+| 1 | SIM | 4 | 01 min 58 s |
+| 2 | SIM | 4 | 02 min 05 s |
+| 3 | SIM | 4 | 02 min 12 s |
+| **Média** | **100 %** | **4,0** | **02 min 05 s** |
+| **Especialista** | SIM | 5 | 01 min 01 s |
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22,54 segundos                          |
-| 2       | SIM             | 5                    | 31,42 segundos                          |
-| 3       | SIM             | 5                    | 36,21 segundos                          |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13,57 segundos |
+**Comentários dos usuários:**  
+Após o cadastro da rota, alguns participantes foram redirecionados para a área de passageiro e precisaram voltar para conferir a oferta. Sugeriram validação de endereço e confirmação da rota semelhante a apps de transporte (Uber/99).
 
-Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam  redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros,  tanto na hora da pesquisa, quanto depois dela, nos resultados.
+---
 
+## Cenário 3  
+**Situação:** Você é passageiro e precisa reservar uma carona de **Contagem → BH** para hoje à tarde.  
+**Objetivo:** Pesquisar, visualizar detalhes e confirmar participação em uma carona existente.
 
+| Usuário | Taxa de sucesso | Satisfação subjetiva (1–5) | Tempo para conclusão |
+|---------|-----------------|----------------------------|----------------------|
+| 1 | SIM | 4 | 01 min 42 s |
+| 2 | SIM | 4 | 01 min 38 s |
+| 3 | SIM | 4 | 01 min 41 s |
+| **Média** | **100 %** | **4,0** | **01 min 40 s** |
+| **Especialista** | SIM | 5 | 00 min 45 s |
 
-## Avaliação 
+**Comentários dos usuários:**  
+Busca funciona, mas usuários relataram dificuldade para encontrar rotas se não souberem exatamente a origem e destino. Sugeriram filtros e sugestões automáticas.
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta um desempenho satisfatório quanto à taxa de sucesso na interação dos usuários, uma vez que os cenários propostos foram concluídos com êxito.
+---
 
-Além disso, a aplicação também alcançou um elevado nível de satisfação subjetiva dos usuários durante a realização dos cenários propostos. Isso é evidenciado pelas médias das avaliações em cada cenário, que variaram entre 4 (bom) e 5 (excelente).
+## Cenário 4  
+**Situação:** Você precisa tirar uma dúvida rápida com o motorista antes da viagem.  
+**Objetivo:** Abrir o chat da carona e trocar mensagens.
 
-Em relação ao tempo de conclusão de cada tarefa/cenário, observou-se uma discrepância significativa entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Essa diferença, até certo ponto, é esperada, dado que o desenvolvedor já possui conhecimento prévio de toda a interface da aplicação, do posicionamento dos elementos, da lógica de organização das páginas, etc.
+| Usuário | Taxa de sucesso | Satisfação subjetiva (1–5) | Tempo para conclusão |
+|---------|-----------------|----------------------------|----------------------|
+| 1 | SIM | 3 | 07 min 55 s |
+| 2 | SIM | 3 | 08 min 10 s |
+| 3 | SIM | 3 | 08 min 05 s |
+| **Média** | **100 %** | **3,0** | **08 min 03 s** |
+| **Especialista** | SIM | 4 | 00 min 30 s |
 
-No entanto, considerando que a diferença foi expressiva (por exemplo, 113 segundos — média dos usuários — contra 25 segundos — especialista — no cenário três), e levando em conta os comentários feitos por alguns usuários, foram identificadas oportunidades para melhorias na usabilidade da aplicação.
+**Comentários dos usuários:**  
+Chat exige atualização manual para exibir novas mensagens, o que gerou atraso e frustração. Todos pediram **chat em tempo real**.
 
-> **Links úteis**:
-> - [Ferramentas de testes de usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+---
+
+## Cenário 5  
+**Situação:** Após chegar ao destino, você deseja avaliar o motorista.  
+**Objetivo:** Atribuir nota e comentário ao condutor.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva (1–5) | Tempo para conclusão |
+|---------|-----------------|----------------------------|----------------------|
+| 1 | SIM | 5 | 00 min 42 s |
+| 2 | SIM | 5 | 00 min 38 s |
+| 3 | SIM | 5 | 00 min 40 s |
+| **Média** | **100 %** | **5,0** | **00 min 40 s** |
+| **Especialista** | SIM | 5 | 00 min 22 s |
+
+**Comentários dos usuários:**  
+Fluxo curto e intuitivo. Interface de avaliação é clara.
+
+---
+
+## Cenário 6  
+**Situação:** Você quer alterar informações do seu perfil e atualizar a senha.  
+**Objetivo:** Editar o perfil recém‑criado.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva (1–5) | Tempo para conclusão |
+|---------|-----------------|----------------------------|----------------------|
+| 1 | SIM | 4 | 01 min 28 s |
+| 2 | SIM | 3 | 01 min 35 s |
+| 3 | SIM | 3 | 01 min 32 s |
+| **Média** | **100 %** | **3,3** | **01 min 32 s** |
+| **Especialista** | SIM | 4 | 00 min 31 s |
+
+**Comentários dos usuários:**  
+Layout considerado simples demais. Troca de senha pareceu pouco segura (não houve confirmação de senha atual).
+
+---
+
+## Avaliação Geral
+
+Os resultados indicam **100 % de sucesso** em todos os cenários testados, com níveis de satisfação variando de **3 (regular) a 5 (excelente)**.  
+- **Pontos fortes:** Cadastro simples; avaliação pós‑viagem rápida; conceito da plataforma bem‑aceito.  
+- **Pontos a melhorar:**  
+  1. Implementar **chat em tempo real** para eliminar necessidade de atualização manual.  
+  2. Ajustar redirecionamento após cadastrar carona e tornar o fluxo de motorista mais coeso.  
+  3. Oferecer filtros/sugestões de rotas na busca para passageiros indecisos.  
+  4. Reforçar segurança e clareza na alteração de senha; repensar layout da página de perfil.  
+
+Apesar de tempos médios maiores que os do especialista (natural devido à familiaridade), a diferença ainda está dentro de limites aceitáveis para sistemas sem treinamento prévio. As sugestões acima visam reduzir essa lacuna e elevar a satisfação geral.
