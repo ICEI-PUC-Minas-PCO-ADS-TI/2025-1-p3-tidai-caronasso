@@ -91,6 +91,13 @@
 |               Critério de êxito              |                                                                          - O passageiro é removido da carona e o sistema exibe uma mensagem de confirmação.                                                                          |
 | Responsável pela elaboração do caso de teste |                                                                                                     Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                                                                     |
 
+|               **Caso de teste**              |                                                                    **CT-015 – Acessar Página Sobre Nós**                                                                    |
+| :------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|              Requisito associado             |                                       RF-00X – O sistema deve disponibilizar uma página institucional com informações sobre o projeto.                                      |
+|               Objetivo do teste              |                                     Verificar se o usuário consegue acessar a página "Sobre Nós" e visualizar as informações do projeto.                                    |
+|                    Passos                    | - Acessar o site <br> - No menu de navegação, clicar em "Sobre Nós" <br> - Verificar se a página carrega corretamente <br> - Conferir se o texto institucional está visível |
+|               Critério de êxito              |                                           - A página abre corretamente e exibe as informações institucionais do projeto Caronasso.                                          |
+| Responsável pela elaboração do caso de teste |                                                                         Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                                        |
 
 
 
