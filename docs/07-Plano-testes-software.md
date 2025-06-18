@@ -91,7 +91,7 @@
 |               Critério de êxito              |                                                                          - O passageiro é removido da carona e o sistema exibe uma mensagem de confirmação.                                                                          |
 | Responsável pela elaboração do caso de teste |                                                                                                     Gabriel Henrique Duarte Ferraz, Phillipi Garcia, Christian Sena Gomes                                                                                                     |
 
-|               **Caso de teste**              |                                                                    **CT-015 – Acessar Página Sobre Nós**                                                                    |
+|               **Caso de teste**              |                                                                    **CT-012 – Acessar Página Sobre Nós**                                                                    |
 | :------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |              Requisito associado             |                                       RF-00X – O sistema deve disponibilizar uma página institucional com informações sobre o projeto.                                      |
 |               Objetivo do teste              |                                     Verificar se o usuário consegue acessar a página "Sobre Nós" e visualizar as informações do projeto.                                    |
