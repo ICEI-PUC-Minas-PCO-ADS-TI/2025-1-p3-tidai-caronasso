@@ -34,13 +34,64 @@ Gabriel Henrique Duarte Ferraz
 
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
+| Requisito associado | RF-001 e RF-006 – O sistema deve permitir o cadastro de usuários com e-mail institucional e Permitir que o usuário se cadastre e crie um perfil com informações pessoais, como nome e curso |
+| Registro de evidência | [Cadastro com e-mail institucional]((https://drive.google.com/file/d/1HChgtZf946lYNTDFenb--wc4_kl_9_Mv/view?usp=drive_link)) |
 
-| **Caso de teste** 	| **CT-002 – Realizar login** 	|
+| **Caso de teste** 	| **CT-002 – Login de Usuário** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Requisito associado |  	RF-001 – O sistema deve permitir que o usuário realize login utilizando e-mail institucional e senha. |
+| Registro de evidência | [Login e Logout](https://drive.google.com/file/d/19I5pYaZx5UYz08xf946j7RMqPkE5BMOO/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-003 – Cadastrar Nova Viagem (Motorista** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-003 – Permitir que o motorista cadastre uma viagem com informações de origem, destino e número de assentos. |
+| Registro de evidência | [Cadastrar de carona (Motorista)](https://drive.google.com/file/d/13qh-m5p1XNyvNKyvh6JRfYJTlGH14AGq/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-004 – Buscar Caronas Disponíveis (Passageiro)** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-004 – O sistema deve permitir que o usuário pesquise caronas disponíveis por origem ou destino. |
+| Registro de evidência | [Caronas Disponiveis](https://drive.google.com/file/d/13qh-m5p1XNyvNKyvh6JRfYJTlGH14AGq/view?usp=drive_link)) |
+
+| **Caso de teste** 	| **CT-005 – Confirmar Participação em uma Carona** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-008 – O sistema deve permitir que o passageiro confirme sua presença em uma carona. |
+| Registro de evidência | [Confirmar presença](https://drive.google.com/file/d/1TbzC-HMvOK8b3a4rS1stNKb0a1njbats/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-006 – Cancelar Carona (Passageiro)** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-002 – Permitir que o passageiro cancele sua carona antes do início da viagem. |
+| Registro de evidência | [Cancelar carona (Passageiro)](https://drive.google.com/file/d/1uaYFDaQeeR2KfdZfwFQf4Bap17Azenf5/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-007 – Visualizar Mapa na Busca de Caronas** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-004 + RNF-001 – O sistema deve exibir o mapa de trajetos na consulta de caronas e ser responsivo. |
+| Registro de evidência | [Visualizar Mapa](https://drive.google.com/file/d/1LHuFk5YfPahPjR9wIzhuwg0yVBNtCnpx/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-008 – Avaliar Motorista** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-008 – O sistema deve permitir que passageiros avaliem motoristas após uma viagem. |
+| Registro de evidência | [Avaliação do Motorista](https://drive.google.com/file/d/1VWdGGcxS8R0grZcTVITrCJVFcXlR7yWK/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-09 – Chat entre Motorista e Passageiro** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-005 – O sistema deve permitir que usuários (motoristas e passageiros) enviem mensagens sobre a viagem. |
+| Registro de evidência | [Chat](https://drive.google.com/file/d/1JMn3hMVZ-oFhBsFZ55ax0CIJv9WIO_UA/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-010 – Cancelamento de Viagem pelo Motorista** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-002 – Permitir que o motorista cancele a viagem antes do início da carona. |
+| Registro de evidência | [Cancelar Viagem(Motorista)](https://drive.google.com/file/d/1fhZfqHKCFnHU9_h-vGALmGbPAYyphhKF/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-011 – Excluir Passageiro da Carona** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-002 – Permitir que o motorista remova um passageiro de uma carona antes do início da viagem. |
+| Registro de evidência | [Excluir Passageiro](https://drive.google.com/file/d/1BNKLlsfNjN-tyQMXG88-GZFOiiAlRoIC/view?usp=drive_link) |
+
+| **Caso de teste** 	| **CT-012 – Acessar Página Sobre Nós** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-00X – O sistema deve disponibilizar uma página institucional com informações sobre o projeto. |
+| Registro de evidência | [Página Sobre Nós](https://drive.google.com/file/d/1pQzolp6aSv2YoWl3Fn_khPzj6WoQerRY/view?usp=drive_link) |
+
 
 
 > **Links úteis**:
