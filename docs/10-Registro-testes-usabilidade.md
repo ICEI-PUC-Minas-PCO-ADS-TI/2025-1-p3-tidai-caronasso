@@ -35,7 +35,7 @@ Cadastro considerado seguro e direto; exigência do e‑mail institucional foi e
 | **Especialista** | SIM | 5 | 01 min 01 s |
 
 **Comentários dos usuários:**  
-Após o cadastro da rota, alguns participantes foram redirecionados para a área de passageiro e precisaram voltar para conferir a oferta. Sugeriram validação de endereço e confirmação da rota semelhante a apps de transporte (Uber/99).
+Após o cadastro da rota, os participantes foram redirecionados para a área de passageiro e precisaram voltar para conferir a oferta. Sugeriram validação de endereço e confirmação da rota semelhante a apps de transporte (Uber/99).
 
 ---
 
