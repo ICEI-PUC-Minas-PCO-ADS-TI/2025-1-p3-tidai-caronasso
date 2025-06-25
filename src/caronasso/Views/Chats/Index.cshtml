@@ -146,6 +146,7 @@
 
                     messagesDiv.appendChild(msgElement);
                 });
+                messagesDiv.scrollTo(0, messagesDiv.scrollHeight);
             });
         }
 
@@ -163,7 +164,48 @@
                 },
                 method: "POST",
                 body: JSON.stringify({'ChatId': parseInt(openChatId), 'Conteudo': msg})
+            }).then(() => {
+                loadMessages(openChatId)
             });
+        }
+
+        async function loadMessages(id) {
+            const chatId = id;
+            const response = await fetch(`/Chats/GetMessages?chatId=${chatId}`);
+            const messages = await response.json();
+
+            messagesDiv.innerHTML = "";
+
+            messages.forEach(msg => {
+                console.log(msg);
+                const msgElement = document.createElement("div");
+                msgElement.classList.add("chat-message");
+
+                if(msg.remetenteId == @ViewBag.currentUserId)
+                {
+                    msgElement.classList.add("own-message");
+                }
+
+                const nameElement = document.createElement("span");
+                nameElement.classList.add("chat-message-name");
+
+                const contentElement = document.createElement("p");
+                contentElement.classList.add("chat-message-content");
+
+                const sendTimeElement = document.createElement("span");
+                sendTimeElement.classList.add("chat-message-time");
+
+                nameElement.textContent = msg.remetente;
+                contentElement.textContent = msg.conteudo;
+                sendTimeElement.textContent = msg.horario;
+
+                msgElement.appendChild(nameElement);
+                msgElement.appendChild(contentElement);
+                msgElement.appendChild(sendTimeElement);
+
+                messagesDiv.appendChild(msgElement);
+            });
+            messagesDiv.scrollTo(0, messagesDiv.scrollHeight);
         }
     </script>
 
