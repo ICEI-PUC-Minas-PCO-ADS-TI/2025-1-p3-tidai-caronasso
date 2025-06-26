@@ -35,7 +35,7 @@ Gabriel Henrique Duarte Ferraz
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-001 e RF-006 – O sistema deve permitir o cadastro de usuários com e-mail institucional e Permitir que o usuário se cadastre e crie um perfil com informações pessoais, como nome e curso |
-| Registro de evidência | [Cadastro com e-mail institucional]((https://drive.google.com/file/d/1HChgtZf946lYNTDFenb--wc4_kl_9_Mv/view?usp=drive_link)) |
+| Registro de evidência | [Cadastro com e-mail institucional](https://drive.google.com/file/d/1HChgtZf946lYNTDFenb--wc4_kl_9_Mv/view?usp=drive_link)) |
 
 | **Caso de teste** 	| **CT-002 – Login de Usuário** 	|
 |:---:	|:---:	|
